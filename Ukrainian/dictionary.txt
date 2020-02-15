@@ -1,0 +1,5 @@
+; This dictionary for Ukrainian voices which are part of RHVoice Speech Synthesizer (https://github.com/Olga-Yakovleva/RHVoice) OR (https://github.com/RHVoice) contains the rules for the correct pronunciation of Ukrainian words and abbreviations.
+; This dictionary is distributed under LGPL v2.1 or later.
+; Copyright (C) 2020 DictionaryTeam (https://github.com/RHVoice)
+; DictionaryTeam:
+; ANT Berezhnyi <velmyshanovnyi@gmail.com> | www.t.me/velmyshanovnyi
