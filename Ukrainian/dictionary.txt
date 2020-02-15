@@ -10,7 +10,7 @@
 ; у вас вже має бути заінстальований реліз. Його краще брати тут: 
 ; https://github.com/Olga-Yakovleva/RHVoice/releases
 ; Для активації цього словника, його необхідно розмістити тут:
-; %APPDATA%/RHVoice\dicts\Ukrainian\dictionary.txt
+; %APPDATA%\RHVoice\dicts\Ukrainian\dictionary.txt
 ; повна інструкція тут: 
 ; https://facebook.com/syntezator
 
