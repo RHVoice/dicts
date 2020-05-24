@@ -65,19 +65,29 @@ move /y "!FolderTEMP!\dicts-master\AppData\Roaming\RHVoice\dicts\Russian\*.*" "%
 move /y "!FolderTEMP!\dicts-master\AppData\Roaming\RHVoice\dicts\Ukrainian\*.*" "%AppData%\RHVoice\dicts\Ukrainian"
 @echo #
 @echo #
-@echo # ЗРОБИТИ перевірку на IF NOT EXIST конфігураційних файлів, якщо нема - скопіювати. якщо є - пропустити.
+@echo # Перевірка конфігураційних файлів, якщо нема - створити, якщо є - залишити такими як є.
 @echo #
 @echo # RHVoice.conf
 @echo # RHVoice.ini
 
 if not exist "%AppData%\RHVoice\RHVoice.conf" ( move /y "!FolderTEMP!\dicts-master\AppData\Roaming\RHVoice\RHVoice.conf" "%AppData%\RHVoice" )
 if not exist "%AppData%\RHVoice\RHVoice.ini"  ( move /y "!FolderTEMP!\dicts-master\AppData\Roaming\RHVoice\RHVoice.ini"  "%AppData%\RHVoice" )
+@echo # 
 
+
+@echo # 
+@echo # оновлення версії самого скрипта
+if not exist "%FolderTEMP%\update_script.cmd" ( goto :updateScript )
+
+
+
+
+:updateScriptEnd
 @echo # 
 @echo # по закінченню роботи скрипта, видаляємо тимчасову папку.
 @echo # rmdir /s/q !FolderTEMP!
 @echo # 
-rmdir /s/q !FolderTEMP!
+REM if exist "%FolderTEMP%\update_script.cmd" ( #rmdir /s/q !FolderTEMP! )
 @echo # 
 
 
@@ -110,3 +120,21 @@ rmdir /s/q !FolderTEMP!
 
 
 cmd -k
+
+
+:updateScript
+@echo off&echo->"%FolderTEMP%\update_script.cmd"
+@echo. if exist "update_script.cmd" ( goto :gotoStart )                                    >>"%FolderTEMP%\update_script.cmd"
+@echo. :gotoEnd                                                                            >>"%FolderTEMP%\update_script.cmd"
+@echo.                                                                                     >>"%FolderTEMP%\update_script.cmd"
+@echo.  .\update_dict.cmd"                                                                 >>"%FolderTEMP%\update_script.cmd"
+@echo.                                                                                     >>"%FolderTEMP%\update_script.cmd"
+@echo. :gotoStart                                                                          >>"%FolderTEMP%\update_script.cmd"
+@echo. copy /y "dicts-master\update_dict.cmd" ".\update_dict-01.cmd"                       >>"%FolderTEMP%\update_script.cmd"
+@echo. goto :gotoEnd                                                                       >>"%FolderTEMP%\update_script.cmd"
+
+
+goto :updateScriptEnd
+
+
+
