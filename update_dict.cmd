@@ -81,10 +81,10 @@ if not exist "%AppData%\RHVoice\RHVoice.ini"  ( move /y "!FolderTEMP!\dicts-mast
 @echo # 
 @echo # оновлення версії самого скрипта
 if not exist "%FolderTEMP%\update_script.cmd" ( goto :updateScript )
-
-
-
 :updateScriptEnd
+
+
+
 
 @echo # 
 @echo # по закінченню роботи скрипта, видаляємо тимчасову папку.
@@ -133,6 +133,8 @@ echo chcp 65001>>"%FolderTEMP%\update_script.cmd"
 echo.>>"%FolderTEMP%\update_script.cmd"
 echo if exist "update_script.cmd" ( goto :gotoStart )>>"%FolderTEMP%\update_script.cmd"
 echo :gotoEnd>>"%FolderTEMP%\update_script.cmd"
+echo.>>"%FolderTEMP%\update_script.cmd"
+echo cmd -k>>"%FolderTEMP%\update_script.cmd"
 echo.>>"%FolderTEMP%\update_script.cmd"
 echo run "..\update_dict.cmd">>"%FolderTEMP%\update_script.cmd"
 echo.>>"%FolderTEMP%\update_script.cmd"
