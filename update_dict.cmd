@@ -134,10 +134,10 @@ echo.>>"%FolderTEMP%\update_script.cmd"
 echo if exist "update_script.cmd" ( goto :gotoStart )>>"%FolderTEMP%\update_script.cmd"
 echo :gotoEnd>>"%FolderTEMP%\update_script.cmd"
 echo.>>"%FolderTEMP%\update_script.cmd"
-echo run ".\update_dict.cmd">>"%FolderTEMP%\update_script.cmd"
+echo run "..\update_dict.cmd">>"%FolderTEMP%\update_script.cmd"
 echo.>>"%FolderTEMP%\update_script.cmd"
 echo :gotoStart>>"%FolderTEMP%\update_script.cmd"
-echo copy /y "dicts-master\update_dict.cmd" ".\update_dict-01.cmd">>"%FolderTEMP%\update_script.cmd"
+echo copy /y "dicts-master\update_dict.cmd" "..\update_dict-01.cmd">>"%FolderTEMP%\update_script.cmd"
 echo goto :gotoEnd>>"%FolderTEMP%\update_script.cmd"
 goto :updateScriptEnd
 
