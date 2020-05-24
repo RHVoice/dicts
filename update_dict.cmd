@@ -87,7 +87,7 @@ if not exist "%FolderTEMP%\update_script.cmd" ( goto :updateScript )
 @echo # по закінченню роботи скрипта, видаляємо тимчасову папку.
 @echo # rmdir /s/q !FolderTEMP!
 @echo # 
-REM if exist "%FolderTEMP%\update_script.cmd" ( #rmdir /s/q !FolderTEMP! )
+if exist "%FolderTEMP%\update_script.cmd" ( #rmdir /s/q !FolderTEMP! )
 @echo # 
 
 
@@ -124,16 +124,18 @@ cmd -k
 
 :updateScript
 @echo off&echo->"%FolderTEMP%\update_script.cmd"
-@echo. if exist "update_script.cmd" ( goto :gotoStart )                                    >>"%FolderTEMP%\update_script.cmd"
-@echo. :gotoEnd                                                                            >>"%FolderTEMP%\update_script.cmd"
-@echo.                                                                                     >>"%FolderTEMP%\update_script.cmd"
-@echo.  .\update_dict.cmd"                                                                 >>"%FolderTEMP%\update_script.cmd"
-@echo.                                                                                     >>"%FolderTEMP%\update_script.cmd"
-@echo. :gotoStart                                                                          >>"%FolderTEMP%\update_script.cmd"
-@echo. copy /y "dicts-master\update_dict.cmd" ".\update_dict-01.cmd"                       >>"%FolderTEMP%\update_script.cmd"
-@echo. goto :gotoEnd                                                                       >>"%FolderTEMP%\update_script.cmd"
-
-
+echo setlocal EnableDelayedExpansion>>"%FolderTEMP%\update_script.cmd"
+echo chcp>>"%FolderTEMP%\update_script.cmd"
+echo chcp 65001>>"%FolderTEMP%\update_script.cmd"
+echo.>>"%FolderTEMP%\update_script.cmd"
+echo if exist "update_script.cmd" ( goto :gotoStart )>>"%FolderTEMP%\update_script.cmd"
+echo :gotoEnd>>"%FolderTEMP%\update_script.cmd"
+echo.>>"%FolderTEMP%\update_script.cmd"
+echo run ".\update_dict.cmd">>"%FolderTEMP%\update_script.cmd"
+echo.>>"%FolderTEMP%\update_script.cmd"
+echo :gotoStart>>"%FolderTEMP%\update_script.cmd"
+echo copy /y "dicts-master\update_dict.cmd" ".\update_dict-01.cmd">>"%FolderTEMP%\update_script.cmd"
+echo goto :gotoEnd>>"%FolderTEMP%\update_script.cmd"
 goto :updateScriptEnd
 
 
