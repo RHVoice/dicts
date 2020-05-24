@@ -73,5 +73,40 @@ move /y "!FolderTEMP!\dicts-master\AppData\Roaming\RHVoice\dicts\Ukrainian\*.*" 
 if not exist "%AppData%\RHVoice\RHVoice.conf" ( move /y "!FolderTEMP!\dicts-master\AppData\Roaming\RHVoice\RHVoice.conf" "%AppData%\RHVoice" )
 if not exist "%AppData%\RHVoice\RHVoice.ini"  ( move /y "!FolderTEMP!\dicts-master\AppData\Roaming\RHVoice\RHVoice.ini"  "%AppData%\RHVoice" )
 
+@echo # 
+@echo # по закінченню роботи скрипта, видаляємо тимчасову папку.
+@echo # rmdir /s/q !FolderTEMP!
+@echo # 
+rmdir /s/q !FolderTEMP!
+@echo # 
+
+
+@echo # 
+@echo ########################################################
+@echo ########################################################
+@echo ###                                                  ###
+@echo ### СЛОВНИКИ ОНОВЛЕНО ДО ОСТАННЬОЇ АКТУАЛЬНОЇ ВЕРСІЇ ###
+@echo ###                                                  ###
+@echo ### ------------------------------------------------ ###
+@echo ### версія скрипта від : 20200524                    ###
+@echo ### версія словників   : по даті оновлення на GitHub ###
+@echo ### https://github.com/RHVoice/dicts                 ###
+@echo ### ------------------------------------------------ ###
+@echo ### якщо є потреба виправити ще якісь слова, то:     ###
+@echo ###                                                  ###
+@echo ### напиши їх в телеграм групу:                      ###
+@echo ### https://t.me/RHVoice                             ###
+@echo ###                                                  ###
+@echo ### зроби коміт на гітхабі:                          ###
+@echo ### https://github.com/RHVoice/dicts                 ###
+@echo ###                                                  ###
+@echo ### оформи запит на гітхабі:                         ###
+@echo ### https://github.com/RHVoice/dicts/issues          ###
+@echo ###                                                  ###
+@echo ########################################################
+@echo ########################################################
+@echo #
+@echo # 
+
 
 cmd -k
