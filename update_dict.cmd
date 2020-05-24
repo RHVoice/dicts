@@ -28,8 +28,8 @@ chcp 65001 > nul
 @echo # 
 set FolderTEMP=temp
 @echo # 
-@echo # друга фаза оновлення версії самого скрипта
-if exist "%FolderTEMP%\update_script.cmd" ( goto :updateScriptEnd )
+REM @echo # друга фаза оновлення версії самого скрипта
+REM if exist "%FolderTEMP%\update_script.cmd" ( goto :updateScriptEnd )
 @echo # 
 @echo # "для профілактики" видаляємо тимчасову папку (щоб не трапились збої).
 @echo # rmdir /s/q !FolderTEMP!
