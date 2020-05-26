@@ -165,7 +165,7 @@ REM echo cmd -k>>"%FolderTEMP%\update_script.cmd"
 echo.>>"%FolderTEMP%\update_script.cmd"
 echo :gotoStart>>"%FolderTEMP%\update_script.cmd"
 echo @echo.!skobkaR!"update_dict_temp.cmd">>"%FolderTEMP%\update_script.cmd"
-echo off&echo-!skobkaR!"update_dict_temp.cmd">>"%FolderTEMP%\update_script.cmd"
+echo echo off&echo-!skobkaR!"update_dict_temp.cmd">>"%FolderTEMP%\update_script.cmd"
 echo type "dicts-master\update_dict.cmd"!skobkaR!!skobkaR!"update_dict_temp.cmd">>"%FolderTEMP%\update_script.cmd"
 echo copy /y "update_dict_temp.cmd" "..\update_dict.cmd">>"%FolderTEMP%\update_script.cmd"
 echo.>>"%FolderTEMP%\update_script.cmd"
@@ -180,4 +180,3 @@ start "update_script" "%FolderTEMP%\update_script.cmd"
 REM технологічна ПАУЗА для того щоб тестити валідність відпрацьовки скрипта.
 REM pause
 exit
-
