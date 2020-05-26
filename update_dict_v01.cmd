@@ -4,27 +4,25 @@ chcp
 chcp 65001
 chcp 65001 > nul
 
-pause
-
 @echo # 
 @echo #################################################
-@echo # ; 
-@echo # ; This dictionary for Ukrainian voices which are part of RHVoice Speech Synthesizer (https://github.com/Olga-Yakovleva/RHVoice) OR (https://github.com/RHVoice) contains the rules for the correct pronunciation of Ukrainian words and abbreviations.
-@echo # ; This dictionary is distributed under LGPL v2.1 or later.
-@echo # ; Copyright (C) 2020 DictionaryTeam (https://github.com/RHVoice)
-@echo # ; DictionaryTeam:
-@echo # ; ANT Berezhnyi # velmyshanovnyi@gmail.com # www.t.me/velmyshanovnyi #
-@echo # ; 
-@echo # ; ----- WINDOWS -----
-@echo # ; 1) У вас вже має бути заінстальований реліз RHVoice. Брати тут: 
-@echo # ; https://github.com/Olga-Yakovleva/RHVoice/releases
-@echo # ; 
-@echo # ; 2) щоб оновити словники запустіть 
-@echo # ; "update_dict.cmd"
-@echo # ; 
+@echo # 
+@echo # This dictionary updater for RHVoice Speech Synthesizer
+@echo # (https://github.com/Olga-Yakovleva/RHVoice) OR (https://github.com/RHVoice) 
+@echo #  
+@echo # This updater is distributed under LGPL v2.1 or later.
+@echo # Copyright (C) 2020 DictionaryTeam (https://github.com/RHVoice)
+@echo # DictionaryTeam:
+@echo # ANT Berezhnyi # velmyshanovnyi@gmail.com # www.t.me/velmyshanovnyi #
+@echo #  
+@echo # ----- WINDOWS -----
+@echo # 1) У вас вже має бути заінстальований реліз RHVoice. Брати тут: 
+@echo # https://github.com/Olga-Yakovleva/RHVoice/releases
+@echo # 
+@echo # 2) щоб оновити словники запустіть 
+@echo # "update_dict.cmd"
+@echo # 
 @echo #################################################
-
-pause
 
 
 @echo # 
@@ -36,7 +34,8 @@ set FolderTEMP=temp
 @echo # if exist "%FolderTEMP%\update_script.cmd" ( goto :updateScriptB )
 @echo # 
 
-pause
+
+
 
 
 @echo # "для профілактики" видаляємо тимчасову папку (щоб не трапились збої).
@@ -67,12 +66,10 @@ curl -o "!FolderTEMP!\dicts-master.zip" -LJO https://github.com/RHVoice/dicts/ar
 @echo # !FolderTEMP!\unzip.exe "!FolderTEMP!\dicts-master.zip" -d "!FolderTEMP!"
 @echo #
 !FolderTEMP!\unzip.exe "!FolderTEMP!\dicts-master.zip" -d "!FolderTEMP!"
-
-
-
-
 @echo # 
 @echo #
+
+
 @echo # переміщуємо словникм із тимчасової папки в системну
 @echo # move /y "!FolderTEMP!\dicts-master\AppData\Roaming\RHVoice\dicts\LANG\*.*" "%AppData%\RHVoice\dicts\LANG"
 @echo # 
@@ -90,38 +87,26 @@ if not exist "%AppData%\RHVoice\RHVoice.ini"  ( move /y "!FolderTEMP!\dicts-mast
 @echo # 
 
 
-pause
-
-pause
 
 @echo # 
-@echo # оновлення версії самого скрипта goto :updateScriptA
+@echo # оновлення версії самого скрипта
 @echo # if not exist "%FolderTEMP%\update_script.cmd" ( goto :updateScriptA )
-pause
+
 if not exist "%FolderTEMP%\update_script.cmd" ( goto :updateScriptA )
-
-
-
-pause
-
 
 
 :updateScriptB
 
 
+:updateScriptC
 
-pause
-
-
-pause
 
 @echo # 
 @echo # по закінченню роботи скрипта, видаляємо тимчасову папку.
-@echo # rmdir /s/q !FolderTEMP!
+REM @echo # rmdir /s/q !FolderTEMP!
 @echo # 
-if exist "%FolderTEMP%\update_script.cmd" ( #rmdir /s/q !FolderTEMP! )
+REM if exist "%FolderTEMP%\update_script.cmd" ( #rmdir /s/q !FolderTEMP! )
 @echo # 
-
 
 @echo # 
 @echo ########################################################
@@ -154,21 +139,25 @@ if exist "%FolderTEMP%\update_script.cmd" ( #rmdir /s/q !FolderTEMP! )
 cmd -k
 
 
+
 :updateScriptA
-@echo off&echo->"%FolderTEMP%\update_script.cmd"
-echo setlocal EnableDelayedExpansion>>"%FolderTEMP%\update_script.cmd"
+echo setlocal EnableDelayedExpansion>"%FolderTEMP%\update_script.cmd"
 echo chcp>>"%FolderTEMP%\update_script.cmd"
 echo chcp 65001>>"%FolderTEMP%\update_script.cmd"
 echo.>>"%FolderTEMP%\update_script.cmd"
 echo if exist "update_script.cmd" ( goto :gotoStart )>>"%FolderTEMP%\update_script.cmd"
 echo :gotoEnd>>"%FolderTEMP%\update_script.cmd"
 echo.>>"%FolderTEMP%\update_script.cmd"
-echo run "..\update_dict.cmd">>"%FolderTEMP%\update_script.cmd"
+echo cd..>>"%FolderTEMP%\update_script.cmd"
+echo dir>>"%FolderTEMP%\update_script.cmd"
+echo.>>"%FolderTEMP%\update_script.cmd"
+echo.>>"%FolderTEMP%\update_script.cmd"
+echo start "update_dict" "update_dict.cmd">>"%FolderTEMP%\update_script.cmd"
 echo.>>"%FolderTEMP%\update_script.cmd"
 echo cmd -k>>"%FolderTEMP%\update_script.cmd"
 echo.>>"%FolderTEMP%\update_script.cmd"
 echo :gotoStart>>"%FolderTEMP%\update_script.cmd"
-echo copy /y "dicts-master\update_dict.cmd" "..\update_dict.cmd">>"%FolderTEMP%\update_script.cmd"
+echo move /y "dicts-master\update_dict.cmd" "..\update_dict.cmd">>"%FolderTEMP%\update_script.cmd"
 echo goto :gotoEnd>>"%FolderTEMP%\update_script.cmd"
 goto :updateScriptB
 

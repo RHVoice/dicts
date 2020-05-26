@@ -4,7 +4,6 @@ chcp
 chcp 65001
 chcp 65001 > nul
 
-pause
 
 @echo # 
 @echo #################################################
@@ -25,8 +24,6 @@ pause
 @echo # "update_dict.cmd"
 @echo # 
 @echo #################################################
-
-pause
 
 
 @echo # 
@@ -99,7 +96,7 @@ if not exist "%AppData%\RHVoice\RHVoice.ini"  ( move /y "!FolderTEMP!\dicts-mast
 if not exist "%FolderTEMP%\update_script.cmd" ( goto :updateScriptA )
 
 
-:updateScriptB
+
 
 
 :updateScriptC
@@ -139,6 +136,8 @@ REM if exist "%FolderTEMP%\update_script.cmd" ( #rmdir /s/q !FolderTEMP! )
 @echo #
 @echo # 
 
+
+:updateScriptB
 
 cmd -k
 
