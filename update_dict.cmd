@@ -34,7 +34,7 @@ chcp 65001 > nul
 set FolderTEMP=temp
 @echo # 
 @echo #  # друга фаза оновлення версії самого скрипта
-@echo # if exist "%FolderTEMP%\update_script.cmd" ( goto :updateScriptB )
+@echo # if exist "%FolderTEMP%\update_script.cmd" ( goto :updateScriptC )
 @echo # 
 
 
@@ -94,18 +94,11 @@ if not exist "%AppData%\RHVoice\RHVoice.ini"  ( move /y "!FolderTEMP!\dicts-mast
 @echo # 
 @echo # оновлення версії самого скрипта
 @echo # if not exist "%FolderTEMP%\update_script.cmd" ( goto :updateScriptA )
-pause
+
 if not exist "%FolderTEMP%\update_script.cmd" ( goto :updateScriptA )
 
 
-
-
-
-
-:updateScriptB
-
-
-pause
+:updateScriptC
 
 
 @echo # 
@@ -143,6 +136,11 @@ REM if exist "%FolderTEMP%\update_script.cmd" ( #rmdir /s/q !FolderTEMP! )
 @echo # 
 
 
+
+
+:updateScriptB
+
+
 cmd -k
 
 
@@ -159,10 +157,7 @@ echo.>>"%FolderTEMP%\update_script.cmd"
 echo cd..>>"%FolderTEMP%\update_script.cmd"
 echo dir>>"%FolderTEMP%\update_script.cmd"
 echo.>>"%FolderTEMP%\update_script.cmd"
-echo.>>"%FolderTEMP%\update_script.cmd"
-echo.>>"%FolderTEMP%\update_script.cmd"
-echo.>>"%FolderTEMP%\update_script.cmd"
-echo start "update_dict" "update_dict1.cmd">>"%FolderTEMP%\update_script.cmd"
+echo start "update_dict" "update_dict.cmd">>"%FolderTEMP%\update_script.cmd"
 echo.>>"%FolderTEMP%\update_script.cmd"
 echo cmd -k>>"%FolderTEMP%\update_script.cmd"
 echo.>>"%FolderTEMP%\update_script.cmd"
