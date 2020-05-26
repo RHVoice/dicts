@@ -4,7 +4,6 @@ chcp
 chcp 65001
 chcp 65001 > nul
 
-
 @echo # 
 @echo #################################################
 @echo # 
@@ -96,7 +95,7 @@ if not exist "%AppData%\RHVoice\RHVoice.ini"  ( move /y "!FolderTEMP!\dicts-mast
 if not exist "%FolderTEMP%\update_script.cmd" ( goto :updateScriptA )
 
 
-
+:updateScriptB
 
 
 :updateScriptC
@@ -137,16 +136,16 @@ REM if exist "%FolderTEMP%\update_script.cmd" ( #rmdir /s/q !FolderTEMP! )
 @echo # 
 
 
-:updateScriptB
-
 cmd -k
 
 
 
 :updateScriptA
+set "skobkaL=<"
+set "skobkaR=>"
 echo setlocal EnableDelayedExpansion>"%FolderTEMP%\update_script.cmd"
 echo chcp>>"%FolderTEMP%\update_script.cmd"
-echo chcp 65001>>"%FolderTEMP%\update_script.cmd"
+echo ##chcp 65001>>"%FolderTEMP%\update_script.cmd"
 echo.>>"%FolderTEMP%\update_script.cmd"
 echo if exist "update_script.cmd" ( goto :gotoStart )>>"%FolderTEMP%\update_script.cmd"
 echo :gotoEnd>>"%FolderTEMP%\update_script.cmd"
@@ -160,7 +159,12 @@ echo.>>"%FolderTEMP%\update_script.cmd"
 echo cmd -k>>"%FolderTEMP%\update_script.cmd"
 echo.>>"%FolderTEMP%\update_script.cmd"
 echo :gotoStart>>"%FolderTEMP%\update_script.cmd"
-echo move /y "dicts-master\update_dict.cmd" "..\update_dict.cmd">>"%FolderTEMP%\update_script.cmd"
+
+echo @echo. !skobkaR!"update_dict_temp.cmd">>"%FolderTEMP%\update_script.cmd"
+echo type "dicts-master\update_dict.cmd"!skobkaR!!skobkaR!"update_dict_temp.cmd">>"%FolderTEMP%\update_script.cmd"
+echo move /y "update_dict_temp.cmd" "..\update_dict.cmd">>"%FolderTEMP%\update_script.cmd"
+echo.>>"%FolderTEMP%\update_script.cmd"
+REM echo copy /y "dicts-master\update_dict.cmd" "..\update_dict.cmd">>"%FolderTEMP%\update_script.cmd"
 echo goto :gotoEnd>>"%FolderTEMP%\update_script.cmd"
 goto :updateScriptB
 
