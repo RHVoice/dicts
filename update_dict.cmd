@@ -31,9 +31,9 @@ chcp 65001 > nul
 set FolderTEMP=temp
 @echo # 
 @echo #  # друга фаза оновлення версії самого скрипта
-@echo # if exist "%FolderTEMP%\update_script.cmd" ( goto :updateScriptB )
+@echo # if exist "%FolderTEMP%\update_script.cmd" ( goto :updateScriptC )
 @echo # 
-
+if exist "%FolderTEMP%\update_script.cmd" ( goto :updateScriptC )
 
 
 
@@ -95,7 +95,7 @@ if not exist "%AppData%\RHVoice\RHVoice.ini"  ( move /y "!FolderTEMP!\dicts-mast
 if not exist "%FolderTEMP%\update_script.cmd" ( goto :updateScriptA )
 
 
-:updateScriptB
+
 
 
 :updateScriptC
@@ -103,9 +103,9 @@ if not exist "%FolderTEMP%\update_script.cmd" ( goto :updateScriptA )
 
 @echo # 
 @echo # по закінченню роботи скрипта, видаляємо тимчасову папку.
-REM @echo # rmdir /s/q !FolderTEMP!
+@echo # rmdir /s/q !FolderTEMP!
 @echo # 
-REM if exist "%FolderTEMP%\update_script.cmd" ( #rmdir /s/q !FolderTEMP! )
+if exist "%FolderTEMP%\update_script.cmd" ( rmdir /s/q !FolderTEMP! )
 @echo # 
 
 @echo # 
@@ -145,28 +145,39 @@ set "skobkaL=<"
 set "skobkaR=>"
 echo setlocal EnableDelayedExpansion>"%FolderTEMP%\update_script.cmd"
 echo chcp>>"%FolderTEMP%\update_script.cmd"
-echo ##chcp 65001>>"%FolderTEMP%\update_script.cmd"
+echo chcp 65001>>"%FolderTEMP%\update_script.cmd"
 echo.>>"%FolderTEMP%\update_script.cmd"
 echo if exist "update_script.cmd" ( goto :gotoStart )>>"%FolderTEMP%\update_script.cmd"
 echo :gotoEnd>>"%FolderTEMP%\update_script.cmd"
 echo.>>"%FolderTEMP%\update_script.cmd"
-echo cd..>>"%FolderTEMP%\update_script.cmd"
+REM echo cd..>>"%FolderTEMP%\update_script.cmd"
 echo dir>>"%FolderTEMP%\update_script.cmd"
 echo.>>"%FolderTEMP%\update_script.cmd"
 echo.>>"%FolderTEMP%\update_script.cmd"
 echo start "update_dict" "update_dict.cmd">>"%FolderTEMP%\update_script.cmd"
 echo.>>"%FolderTEMP%\update_script.cmd"
-echo cmd -k>>"%FolderTEMP%\update_script.cmd"
+echo @echo # END 2 EXIT 2 END 2 EXIT 2 END 2 EXIT 2 END 2 EXIT>>"%FolderTEMP%\update_script.cmd"
+REM технологічна ПАУЗА для того щоб тестити валідність відпрацьовки скрипта.
+REM echo pause >>"%FolderTEMP%\update_script.cmd"
+echo exit>>"%FolderTEMP%\update_script.cmd"
+REM технологічна ЗУПИНКА для того щоб тестити валідність відпрацьовки скрипта.
+REM echo cmd -k>>"%FolderTEMP%\update_script.cmd"
 echo.>>"%FolderTEMP%\update_script.cmd"
 echo :gotoStart>>"%FolderTEMP%\update_script.cmd"
-
-echo @echo. !skobkaR!"update_dict_temp.cmd">>"%FolderTEMP%\update_script.cmd"
+echo @echo.!skobkaR!"update_dict_temp.cmd">>"%FolderTEMP%\update_script.cmd"
+echo off&echo-!skobkaR!"update_dict_temp.cmd">>"%FolderTEMP%\update_script.cmd"
 echo type "dicts-master\update_dict.cmd"!skobkaR!!skobkaR!"update_dict_temp.cmd">>"%FolderTEMP%\update_script.cmd"
-echo move /y "update_dict_temp.cmd" "..\update_dict.cmd">>"%FolderTEMP%\update_script.cmd"
+echo copy /y "update_dict_temp.cmd" "..\update_dict.cmd">>"%FolderTEMP%\update_script.cmd"
 echo.>>"%FolderTEMP%\update_script.cmd"
-REM echo copy /y "dicts-master\update_dict.cmd" "..\update_dict.cmd">>"%FolderTEMP%\update_script.cmd"
 echo goto :gotoEnd>>"%FolderTEMP%\update_script.cmd"
 goto :updateScriptB
 
 
+:updateScriptB
+
+@echo # END 1 EXIT 1 END 1 EXIT 1 END 1 EXIT 1 END 1 EXIT
+start "update_script" "%FolderTEMP%\update_script.cmd"
+REM технологічна ПАУЗА для того щоб тестити валідність відпрацьовки скрипта.
+REM pause
+exit
 
