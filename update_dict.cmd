@@ -115,7 +115,7 @@ if exist "%FolderTEMP%\update_script.cmd" ( rmdir /s/q !FolderTEMP! )
 @echo ### СЛОВНИКИ ОНОВЛЕНО ДО ОСТАННЬОЇ АКТУАЛЬНОЇ ВЕРСІЇ ###
 @echo ###                                                  ###
 @echo ### ------------------------------------------------ ###
-@echo ### версія скрипта від : 20200524                    ###
+@echo ### версія скрипта від : 20200527-0111               ###
 @echo ### версія словників   : по даті оновлення на GitHub ###
 @echo ### https://github.com/RHVoice/dicts                 ###
 @echo ### ------------------------------------------------ ###
@@ -154,17 +154,23 @@ REM echo cd..>>"%FolderTEMP%\update_script.cmd"
 echo dir>>"%FolderTEMP%\update_script.cmd"
 echo.>>"%FolderTEMP%\update_script.cmd"
 echo.>>"%FolderTEMP%\update_script.cmd"
+REM технологічна ПАУЗА для того щоб тестити валідність відпрацьовки скрипта.
+echo pause >>"%FolderTEMP%\update_script.cmd"
+
+
 echo start "update_dict" "update_dict.cmd">>"%FolderTEMP%\update_script.cmd"
 echo.>>"%FolderTEMP%\update_script.cmd"
 echo @echo # END 2 EXIT 2 END 2 EXIT 2 END 2 EXIT 2 END 2 EXIT>>"%FolderTEMP%\update_script.cmd"
 REM технологічна ПАУЗА для того щоб тестити валідність відпрацьовки скрипта.
-REM echo pause >>"%FolderTEMP%\update_script.cmd"
+echo pause >>"%FolderTEMP%\update_script.cmd"
+
+
 echo exit>>"%FolderTEMP%\update_script.cmd"
 REM технологічна ЗУПИНКА для того щоб тестити валідність відпрацьовки скрипта.
 REM echo cmd -k>>"%FolderTEMP%\update_script.cmd"
 echo.>>"%FolderTEMP%\update_script.cmd"
 echo :gotoStart>>"%FolderTEMP%\update_script.cmd"
-echo @echo.!skobkaR!"update_dict_temp.cmd">>"%FolderTEMP%\update_script.cmd"
+echo @echo. !skobkaR!"update_dict_temp.cmd">>"%FolderTEMP%\update_script.cmd"
 echo echo off&echo-!skobkaR!"update_dict_temp.cmd">>"%FolderTEMP%\update_script.cmd"
 echo type "dicts-master\update_dict.cmd"!skobkaR!!skobkaR!"update_dict_temp.cmd">>"%FolderTEMP%\update_script.cmd"
 echo copy /y "update_dict_temp.cmd" "..\update_dict.cmd">>"%FolderTEMP%\update_script.cmd"
