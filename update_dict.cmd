@@ -102,7 +102,7 @@ rmdir /s/q %FolderTEMP%
 @echo # ## СЛОВНИКИ ОНОВЛЕНО ДО ОСТАННЬОЇ АКТУАЛЬНОЇ ВЕРСIЇ ##
 @echo # ##                                                  ##
 @echo # ## ------------------------------------------------ ##
-@echo # ## версiя скрипта вiд : 20200528-1010               ##
+@echo # ## версiя скрипта вiд : 20200528-1030               ##
 @echo # ## версiя словникiв   : по датi оновлення на GitHub ##
 @echo # ## https://github.com/RHVoice/dicts                 ##
 @echo # ## ------------------------------------------------ ##
@@ -154,9 +154,9 @@ echo.>>"%FolderTEMP%\update_script.cmd"
 
 
 echo :gotoStartUpdate>>"%FolderTEMP%\update_script.cmd"
-echo type %FolderTEMP%\dicts-master\update_dict.cmd | find /v "" !skobkaR! update_dict5.cmd>>"%FolderTEMP%\update_script.cmd"
-echo del /q "update_script.cmd">>"%FolderTEMP%\update_script.cmd"
+echo del /q "update_dict.cmd">>"%FolderTEMP%\update_script.cmd"
 echo for /f "delims=" %%%%x in (%FolderTEMP%\dicts-master\update_dict.cmd) do echo %%%%x !skobkaR!!skobkaR!"update_dict.cmd" >>"%FolderTEMP%\update_script.cmd"
+REM echo type %FolderTEMP%\dicts-master\update_dict.cmd | find /v "" !skobkaR! update_dict5.cmd>>"%FolderTEMP%\update_script.cmd"
 REM REM технологічна ПАУЗА для того щоб тестити валідність відпрацьовки скрипта.
 REM echo pause >>"%FolderTEMP%\update_script.cmd"
 REM echo @echo off!skobkaR!"%FolderTEMP%\update_dict_temp.cmd">>"%FolderTEMP%\update_script.cmd"
