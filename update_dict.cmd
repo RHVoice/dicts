@@ -141,15 +141,10 @@ set "skobkaR=>"
 echo setlocal EnableDelayedExpansion>"%FolderTEMP%\update_script.cmd"
 echo chcp>>"%FolderTEMP%\update_script.cmd"
 echo chcp 65001>>"%FolderTEMP%\update_script.cmd"
-REM echo.>>"%FolderTEMP%\update_script.cmd"
 echo if exist "%FolderTEMP%\update_script.cmd" ( goto :gotoStartUpdate )>>"%FolderTEMP%\update_script.cmd"
 echo :gotoEndUpdate>>"%FolderTEMP%\update_script.cmd"
-echo.>>"%FolderTEMP%\update_script.cmd"
-REM echo cd..>>"%FolderTEMP%\update_script.cmd"
-echo.>>"%FolderTEMP%\update_script.cmd"
 REM технологічна ПАУЗА для того щоб тестити валідність відпрацьовки скрипта.
 REM echo pause >>"%FolderTEMP%\update_script.cmd"
-
 
 echo start "update_dict" "update_dict.cmd">>"%FolderTEMP%\update_script.cmd"
 echo.>>"%FolderTEMP%\update_script.cmd"
@@ -158,11 +153,9 @@ REM технологічна ПАУЗА для того щоб тестити в
 REM echo pause >>"%FolderTEMP%\update_script.cmd"
 echo exit>>"%FolderTEMP%\update_script.cmd"
 
-
 REM технологічна ЗУПИНКА для того щоб тестити валідність відпрацьовки скрипта.
 REM echo cmd -k>>"%FolderTEMP%\update_script.cmd"
 echo.>>"%FolderTEMP%\update_script.cmd"
-
 
 echo :gotoStartUpdate>>"%FolderTEMP%\update_script.cmd"
 echo echo setlocal EnableDelayedExpansion!skobkaR!"%FolderTEMP%\update_dict_temp.cmd">"%FolderTEMP%\update_script.cmd"
@@ -175,6 +168,7 @@ goto :updateScriptB
 
 
 :updateScriptB
+
 
 @echo # END 1 EXIT 1 END 1 EXIT 1 END 1 EXIT 1 END 1 EXIT
 start "update_script" "%FolderTEMP%\update_script.cmd"
