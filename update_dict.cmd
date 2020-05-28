@@ -51,7 +51,7 @@ mkdir %FolderTEMP%
 mkdir %AppData%\RHVoice\dicts\Russian
 mkdir %AppData%\RHVoice\dicts\Ukrainian
 @echo #
-@echo # curl -o "%FolderTEMP%\unzip.exe"        -LJO http://stahlworks.com/dev/unzip.exe
+@echo # curl -o "%FolderTEMP%\unzip.exe" -LJO http://stahlworks.com/dev/unzip.exe
 @echo # curl -o "%FolderTEMP%\dicts-master.zip" -LJO https://github.com/RHVoice/dicts/archive/master.zip
 curl -o "%FolderTEMP%\unzip.exe" -LJO http://stahlworks.com/dev/unzip.exe
 curl -o "%FolderTEMP%\dicts-master.zip" -LJO https://github.com/RHVoice/dicts/archive/master.zip
@@ -81,13 +81,9 @@ if not exist "%AppData%\RHVoice\RHVoice.ini"  ( move /y "%FolderTEMP%\dicts-mast
 if not exist "%FolderTEMP%\update_script.cmd" ( goto :updateScriptA )
 :updateScriptC
 @echo #
-REM @echo # по закінченню роботи скрипта, видаляємо тимчасову папку.
-REM @echo # if exist "%FolderTEMP%\update_script.cmd" ( rmdir /s/q %FolderTEMP% )
 @echo #
 REM if exist "%FolderTEMP%\update_script.cmd" ( rmdir /s/q %FolderTEMP% )
 rmdir /s/q %FolderTEMP%
-@echo #
-@echo #
 @echo #
 @echo #
 @echo # ######################################################
@@ -96,7 +92,7 @@ rmdir /s/q %FolderTEMP%
 @echo # ## (якщо не оновилось не все, запусти повторно)     ##
 @echo # ##                                                  ##
 @echo # ## ------------------------------------------------ ##
-@echo # ## версiя скрипта вiд : 20200529-0233               ##
+@echo # ## версiя скрипта вiд : 20200529-0255               ##
 @echo # ## версiя словникiв   : по датi оновлення на GitHub ##
 @echo # ## https://github.com/RHVoice/dicts                 ##
 @echo # ## ------------------------------------------------ ##
@@ -114,7 +110,6 @@ rmdir /s/q %FolderTEMP%
 @echo # ######################################################
 @echo #
 @echo #
-@echo #
 cmd -k
 :updateScriptA
 set "skobkaL=<"
@@ -124,30 +119,14 @@ echo chcp>>"%FolderTEMP%\update_script.cmd"
 echo chcp 65001>>"%FolderTEMP%\update_script.cmd"
 echo if exist "%FolderTEMP%\update_script.cmd" ( goto :gotoStartUpdate )>>"%FolderTEMP%\update_script.cmd"
 echo :gotoEndUpdate>>"%FolderTEMP%\update_script.cmd"
-REM @echo #технологічна ПАУЗА для того щоб тестити валідність відпрацьовки скрипта.
-REM echo pause >>"%FolderTEMP%\update_script.cmd"
 echo start "update_dict" "update_dict.cmd">>"%FolderTEMP%\update_script.cmd"
-REM echo.>>"%FolderTEMP%\update_script.cmd"
 echo @echo # END 2 EXIT 2 END 2 EXIT 2 END>>"%FolderTEMP%\update_script.cmd"
-REM технологічна ПАУЗА для того щоб тестити валідність відпрацьовки скрипта.
-REM echo pause >>"%FolderTEMP%\update_script.cmd"
 echo exit>>"%FolderTEMP%\update_script.cmd"
-REM технологічна ЗУПИНКА для того щоб тестити валідність відпрацьовки скрипта.
-REM echo cmd -k>>"%FolderTEMP%\update_script.cmd"
 echo.>>"%FolderTEMP%\update_script.cmd"
 echo :gotoStartUpdate>>"%FolderTEMP%\update_script.cmd"
 echo if exist "%FolderTEMP%\dicts-master\update_dict.cmd" ( del /q "update_dict.cmd" )>>"%FolderTEMP%\update_script.cmd"
 echo for /f "delims=" %%%%x in (%FolderTEMP%\dicts-master\update_dict.cmd) do echo %%%%x !skobkaR!!skobkaR!"update_dict.cmd">>"%FolderTEMP%\update_script.cmd"
-REM echo type %FolderTEMP%\dicts-master\update_dict.cmd | find /v "" !skobkaR! update_dict5.cmd>>"%FolderTEMP%\update_script.cmd"
-REM REM технологічна ПАУЗА для того щоб тестити валідність відпрацьовки скрипта.
-REM echo pause >>"%FolderTEMP%\update_script.cmd"
-REM echo @echo off!skobkaR!"%FolderTEMP%\update_dict_temp.cmd">>"%FolderTEMP%\update_script.cmd"
-REM echo echo off&echo-!skobkaR!"%FolderTEMP%\update_dict_temp.cmd">>"%FolderTEMP%\update_script.cmd"
-REM echo echo setlocal EnableDelayedExpansion!skobkaR!"%FolderTEMP%\update_dict_temp.cmd">>"%FolderTEMP%\update_script.cmd"
-REM echo type "%FolderTEMP%\dicts-master\update_dict.cmd"!skobkaR!!skobkaR!"%FolderTEMP%\update_dict_temp.cmd">>"%FolderTEMP%\update_script.cmd"
-REM echo copy /y "%FolderTEMP%\update_dict_temp.cmd" "update_dict.cmd">>"%FolderTEMP%\update_script.cmd"
 echo goto :gotoEndUpdate>>"%FolderTEMP%\update_script.cmd"
-REM echo pause >>"%FolderTEMP%\update_script.cmd"
 goto :updateScriptB
 :updateScriptB
 @echo # END 1 EXIT 1 END 1 EXIT 1 END
