@@ -22,32 +22,32 @@ REM chcp 65001 > nul
 @echo # "update_dict.cmd"
 @echo # 
 @echo #################################################
-@echo # 
+@echo #
 REM @echo # задаємо змінну для тимчасової папки.
-@echo # 
-set FolderTEMP=temp
-@echo # 
+@echo #
+set "FolderTEMP=temp"
+@echo #
 REM @echo #  # друга фаза оновлення версії самого скрипта
-REM @echo # if exist "%FolderTEMP%\update_script.cmd" ( goto :updateScriptC ) 
-@echo # 
-if exist "%FolderTEMP%\update_script.cmd" ( goto :updateScriptC ) 
-@echo # 
+REM @echo # if exist "%FolderTEMP%\update_script.cmd" ( goto :updateScriptC )
+@echo #
+if exist "%FolderTEMP%\update_script.cmd" ( goto :updateScriptC )
+@echo #
 @echo # "для профілактики" видаляємо тимчасову папку (щоб не трапились збої).
 @echo # rmdir /s/q %FolderTEMP%
-@echo # 
+@echo #
 rmdir /s/q %FolderTEMP%
-@echo # 
+@echo #
 @echo # створюємо тимчасову папку
 @echo # mkdir %FolderTEMP%
-@echo # 
+@echo #
 mkdir %FolderTEMP%
-@echo # 
+@echo #
 @echo # "для профілактики" створюємо системні папки із словниками (в разі якщо їх нема).
 @echo # C:\Users\####\AppData\Roaming\RHVoice\dicts\Russian
 @echo # C:\Users\####\AppData\Roaming\RHVoice\dicts\Ukrainian
 @echo # mkdir %AppData%\RHVoice\dicts\Russian
 @echo # mkdir %AppData%\RHVoice\dicts\Ukrainian
-@echo # 
+@echo #
 mkdir %AppData%\RHVoice\dicts\Russian
 mkdir %AppData%\RHVoice\dicts\Ukrainian
 @echo #
@@ -55,54 +55,47 @@ mkdir %AppData%\RHVoice\dicts\Ukrainian
 @echo # curl -o "%FolderTEMP%\dicts-master.zip" -LJO https://github.com/RHVoice/dicts/archive/master.zip
 curl -o "%FolderTEMP%\unzip.exe" -LJO http://stahlworks.com/dev/unzip.exe
 curl -o "%FolderTEMP%\dicts-master.zip" -LJO https://github.com/RHVoice/dicts/archive/master.zip
-@echo # 
-@echo # розархівовуємо словники в тимчасову папку: %FolderTEMP% 
+@echo #
+@echo # розархівовуємо словники в тимчасову папку: %FolderTEMP%
 @echo # %FolderTEMP%\unzip.exe "%FolderTEMP%\dicts-master.zip" -d "%FolderTEMP%"
-@echo # 
+@echo #
 %FolderTEMP%\unzip.exe "%FolderTEMP%\dicts-master.zip" -d "%FolderTEMP%"
-@echo # 
-@echo # 
-
+@echo #
+@echo #
 @echo # переміщуємо словникм із тимчасової папки в системну
 @echo # move /y "%FolderTEMP%\dicts-master\AppData\Roaming\RHVoice\dicts\LANG\*.*" "%AppData%\RHVoice\dicts\LANG"
-@echo # 
+@echo #
 move /y "%FolderTEMP%\dicts-master\AppData\Roaming\RHVoice\dicts\Russian\*.*" "%AppData%\RHVoice\dicts\Russian"
 move /y "%FolderTEMP%\dicts-master\AppData\Roaming\RHVoice\dicts\Ukrainian\*.*" "%AppData%\RHVoice\dicts\Ukrainian"
-@echo # 
+@echo #
 @echo # Перевірка конфігураційних файлів, якщо нема - створити, якщо є - залишити такими як є.
-@echo # 
+@echo #
 @echo # RHVoice.conf
 @echo # RHVoice.ini
 if not exist "%AppData%\RHVoice\RHVoice.conf" ( move /y "%FolderTEMP%\dicts-master\AppData\Roaming\RHVoice\RHVoice.conf" "%AppData%\RHVoice" )
 if not exist "%AppData%\RHVoice\RHVoice.ini"  ( move /y "%FolderTEMP%\dicts-master\AppData\Roaming\RHVoice\RHVoice.ini"  "%AppData%\RHVoice" )
-@echo # 
-
-@echo # 
+@echo #
+@echo #
 @echo # оновлення версії самого скрипта
 @echo # if not exist "%FolderTEMP%\update_script.cmd" ( goto :updateScriptA )
 if not exist "%FolderTEMP%\update_script.cmd" ( goto :updateScriptA )
-
-
 :updateScriptC
-
-
-@echo # 
+@echo #
 REM @echo # по закінченню роботи скрипта, видаляємо тимчасову папку.
 REM @echo # if exist "%FolderTEMP%\update_script.cmd" ( rmdir /s/q %FolderTEMP% )
-@echo # 
+@echo #
 REM if exist "%FolderTEMP%\update_script.cmd" ( rmdir /s/q %FolderTEMP% )
 rmdir /s/q %FolderTEMP%
-@echo # 
-
 @echo #
 @echo #
-@echo # 
+@echo #
+@echo #
 @echo # ######################################################
 @echo # ##                                                  ##
 @echo # ## СЛОВНИКИ ОНОВЛЕНО ДО ОСТАННЬОЇ АКТУАЛЬНОЇ ВЕРСIЇ ##
 @echo # ##                                                  ##
 @echo # ## ------------------------------------------------ ##
-@echo # ## версiя скрипта вiд : 20200528-1030               ##
+@echo # ## версiя скрипта вiд : 20200529-0222               ##
 @echo # ## версiя словникiв   : по датi оновлення на GitHub ##
 @echo # ## https://github.com/RHVoice/dicts                 ##
 @echo # ## ------------------------------------------------ ##
@@ -121,11 +114,7 @@ rmdir /s/q %FolderTEMP%
 @echo #
 @echo #
 @echo #
-
-
 cmd -k
-
-
 :updateScriptA
 set "skobkaL=<"
 set "skobkaR=>"
@@ -134,25 +123,17 @@ echo chcp>>"%FolderTEMP%\update_script.cmd"
 echo chcp 65001>>"%FolderTEMP%\update_script.cmd"
 echo if exist "%FolderTEMP%\update_script.cmd" ( goto :gotoStartUpdate )>>"%FolderTEMP%\update_script.cmd"
 echo :gotoEndUpdate>>"%FolderTEMP%\update_script.cmd"
-
 REM @echo #технологічна ПАУЗА для того щоб тестити валідність відпрацьовки скрипта.
 REM echo pause >>"%FolderTEMP%\update_script.cmd"
-
 echo start "update_dict" "update_dict.cmd">>"%FolderTEMP%\update_script.cmd"
 REM echo.>>"%FolderTEMP%\update_script.cmd"
 echo @echo # END 2 EXIT 2 END 2 EXIT 2 END>>"%FolderTEMP%\update_script.cmd"
 REM технологічна ПАУЗА для того щоб тестити валідність відпрацьовки скрипта.
 REM echo pause >>"%FolderTEMP%\update_script.cmd"
 echo exit>>"%FolderTEMP%\update_script.cmd"
-
 REM технологічна ЗУПИНКА для того щоб тестити валідність відпрацьовки скрипта.
 REM echo cmd -k>>"%FolderTEMP%\update_script.cmd"
 echo.>>"%FolderTEMP%\update_script.cmd"
-
-
-
-
-
 echo :gotoStartUpdate>>"%FolderTEMP%\update_script.cmd"
 echo del /q "update_dict.cmd">>"%FolderTEMP%\update_script.cmd"
 echo for /f "delims=" %%%%x in (%FolderTEMP%\dicts-master\update_dict.cmd) do echo %%%%x !skobkaR!!skobkaR!"update_dict.cmd" >>"%FolderTEMP%\update_script.cmd"
@@ -167,18 +148,9 @@ REM echo copy /y "%FolderTEMP%\update_dict_temp.cmd" "update_dict.cmd">>"%Folder
 echo goto :gotoEndUpdate>>"%FolderTEMP%\update_script.cmd"
 REM echo pause >>"%FolderTEMP%\update_script.cmd"
 goto :updateScriptB
-
-
-
-
-
-
 :updateScriptB
-
 @echo # END 1 EXIT 1 END 1 EXIT 1 END
 start "update_script" "%FolderTEMP%\update_script.cmd"
 REM технологічна ПАУЗА для того щоб тестити валідність відпрацьовки скрипта.
 REM pause
 exit
-
-
