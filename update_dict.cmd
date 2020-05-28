@@ -34,7 +34,7 @@ set FolderTEMP=temp
 REM @echo #  # друга фаза оновлення версії самого скрипта
 REM @echo # if exist "%FolderTEMP%\update_script.cmd" ( goto :updateScriptC )
 @echo # 
-if exist "%FolderTEMP%\update_script.cmd" ( goto :updateScriptC )
+if exist "%FolderTEMP%\update_script.cmd" ( goto :updateScriptC ) 
 
 
 
@@ -137,7 +137,7 @@ rmdir /s/q %FolderTEMP%
 @echo #
 
 
-
+pause
 cmd -k
 
 
