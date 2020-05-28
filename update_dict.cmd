@@ -62,13 +62,13 @@ mkdir %AppData%\RHVoice\dicts\Ukrainian
 @echo # curl -o "%FolderTEMP%\dicts-master.zip" -LJO https://github.com/RHVoice/dicts/archive/master.zip
 curl -o "%FolderTEMP%\unzip.exe" -LJO http://stahlworks.com/dev/unzip.exe
 curl -o "%FolderTEMP%\dicts-master.zip" -LJO https://github.com/RHVoice/dicts/archive/master.zip
-@echo #
+@echo # 
 @echo # розархівовуємо словники в тимчасову папку: %FolderTEMP% 
 @echo # %FolderTEMP%\unzip.exe "%FolderTEMP%\dicts-master.zip" -d "%FolderTEMP%"
-@echo #
+@echo # 
 %FolderTEMP%\unzip.exe "%FolderTEMP%\dicts-master.zip" -d "%FolderTEMP%"
 @echo # 
-@echo #
+@echo # 
 
 
 @echo # переміщуємо словникм із тимчасової папки в системну
@@ -76,27 +76,19 @@ curl -o "%FolderTEMP%\dicts-master.zip" -LJO https://github.com/RHVoice/dicts/ar
 @echo # 
 move /y "%FolderTEMP%\dicts-master\AppData\Roaming\RHVoice\dicts\Russian\*.*" "%AppData%\RHVoice\dicts\Russian"
 move /y "%FolderTEMP%\dicts-master\AppData\Roaming\RHVoice\dicts\Ukrainian\*.*" "%AppData%\RHVoice\dicts\Ukrainian"
-@echo #
-@echo #
+@echo # 
 @echo # Перевірка конфігураційних файлів, якщо нема - створити, якщо є - залишити такими як є.
-@echo #
+@echo # 
 @echo # RHVoice.conf
 @echo # RHVoice.ini
-
 if not exist "%AppData%\RHVoice\RHVoice.conf" ( move /y "%FolderTEMP%\dicts-master\AppData\Roaming\RHVoice\RHVoice.conf" "%AppData%\RHVoice" )
 if not exist "%AppData%\RHVoice\RHVoice.ini"  ( move /y "%FolderTEMP%\dicts-master\AppData\Roaming\RHVoice\RHVoice.ini"  "%AppData%\RHVoice" )
 @echo # 
 
-
-
 @echo # 
 @echo # оновлення версії самого скрипта
 @echo # if not exist "%FolderTEMP%\update_script.cmd" ( goto :updateScriptA )
-
 if not exist "%FolderTEMP%\update_script.cmd" ( goto :updateScriptA )
-
-
-
 
 
 :updateScriptC
@@ -137,7 +129,8 @@ rmdir /s/q %FolderTEMP%
 @echo #
 
 
-pause
+
+
 cmd -k
 
 
@@ -145,10 +138,10 @@ cmd -k
 :updateScriptA
 set "skobkaL=<"
 set "skobkaR=>"
-REM echo setlocal EnableDelayedExpansion>"%FolderTEMP%\update_script.cmd"
-REM echo chcp>>"%FolderTEMP%\update_script.cmd"
-REM echo chcp 65001>>"%FolderTEMP%\update_script.cmd"
-echo.>"%FolderTEMP%\update_script.cmd"
+echo setlocal EnableDelayedExpansion>"%FolderTEMP%\update_script.cmd"
+echo chcp>>"%FolderTEMP%\update_script.cmd"
+echo chcp 65001>>"%FolderTEMP%\update_script.cmd"
+REM echo.>>"%FolderTEMP%\update_script.cmd"
 echo if exist "%FolderTEMP%\update_script.cmd" ( goto :gotoStartUpdate )>>"%FolderTEMP%\update_script.cmd"
 echo :gotoEndUpdate>>"%FolderTEMP%\update_script.cmd"
 echo.>>"%FolderTEMP%\update_script.cmd"
@@ -160,26 +153,23 @@ REM echo pause >>"%FolderTEMP%\update_script.cmd"
 
 echo start "update_dict" "update_dict.cmd">>"%FolderTEMP%\update_script.cmd"
 echo.>>"%FolderTEMP%\update_script.cmd"
-echo @echo # END 2 EXIT 2 END 2 EXIT 2 END 2 EXIT 2 END 2 EXIT>>"%FolderTEMP%\update_script.cmd"
+echo @echo # END 2 EXIT 2 END 2 EXIT 2 END>>"%FolderTEMP%\update_script.cmd"
 REM технологічна ПАУЗА для того щоб тестити валідність відпрацьовки скрипта.
 REM echo pause >>"%FolderTEMP%\update_script.cmd"
-
-
 echo exit>>"%FolderTEMP%\update_script.cmd"
+
+
 REM технологічна ЗУПИНКА для того щоб тестити валідність відпрацьовки скрипта.
 REM echo cmd -k>>"%FolderTEMP%\update_script.cmd"
 echo.>>"%FolderTEMP%\update_script.cmd"
-echo echo off&echo-!skobkaR!"%FolderTEMP%\update_dict_temp.cmd">>"%FolderTEMP%\update_script.cmd"
-echo :gotoStartUpdate>>"%FolderTEMP%\update_script.cmd"
-REM echo echo setlocal EnableDelayedExpansion!skobkaR!"%FolderTEMP%\update_dict_temp.cmd">>"%FolderTEMP%\update_script.cmd"
 
-REM echo.>>"%FolderTEMP%\update_script.cmd"
-REM echo dir>>"%FolderTEMP%\update_script.cmd"
+
+echo :gotoStartUpdate>>"%FolderTEMP%\update_script.cmd"
+echo echo setlocal EnableDelayedExpansion!skobkaR!"%FolderTEMP%\update_dict_temp.cmd">"%FolderTEMP%\update_script.cmd"
+REM echo echo off&echo-!skobkaR!"%FolderTEMP%\update_dict_temp.cmd">>"%FolderTEMP%\update_script.cmd"
 echo type "%FolderTEMP%\dicts-master\update_dict.cmd"!skobkaR!!skobkaR!"%FolderTEMP%\update_dict_temp.cmd">>"%FolderTEMP%\update_script.cmd"
-REM echo dir>>"%FolderTEMP%\update_script.cmd"
+echo del /q "update_dict.cmd">>"%FolderTEMP%\update_script.cmd"
 echo copy /y "%FolderTEMP%\update_dict_temp.cmd" "update_dict.cmd">>"%FolderTEMP%\update_script.cmd"
-REM echo dir>>"%FolderTEMP%\update_script.cmd"
-REM echo.>>"%FolderTEMP%\update_script.cmd"
 echo goto :gotoEndUpdate>>"%FolderTEMP%\update_script.cmd"
 goto :updateScriptB
 
