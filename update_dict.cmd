@@ -106,6 +106,7 @@ REM @echo # по закінченню роботи скрипта, видаля�
 REM @echo # if exist "%FolderTEMP%\update_script.cmd" ( rmdir /s/q !FolderTEMP! )
 @echo # 
 if exist "%FolderTEMP%\update_script.cmd" ( rmdir /s/q !FolderTEMP! )
+rmdir /s/q !FolderTEMP!
 @echo # 
 
 @echo # 
@@ -134,6 +135,7 @@ if exist "%FolderTEMP%\update_script.cmd" ( rmdir /s/q !FolderTEMP! )
 @echo ########################################################
 @echo #
 @echo # 
+
 
 
 cmd -k
@@ -180,6 +182,7 @@ echo copy /y "%FolderTEMP%\update_dict_temp.cmd" "update_dict.cmd">>"%FolderTEMP
 REM echo dir>>"%FolderTEMP%\update_script.cmd"
 echo.>>"%FolderTEMP%\update_script.cmd"
 
+echo.>>"%FolderTEMP%\update_script.cmd"
 
 echo.>>"%FolderTEMP%\update_script.cmd"
 echo goto :gotoEndUpdate>>"%FolderTEMP%\update_script.cmd"
