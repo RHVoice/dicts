@@ -1,10 +1,8 @@
-setlocal EnableDelayedExpansion
 @echo off
+setlocal EnableDelayedExpansion
 chcp
 chcp 65001
-chcp 65001 > nul
-
-@echo # 
+REM chcp 65001 > nul
 @echo #################################################
 @echo # 
 @echo # This dictionary updater for RHVoice Speech Synthesizer
@@ -24,21 +22,16 @@ chcp 65001 > nul
 @echo # "update_dict.cmd"
 @echo # 
 @echo #################################################
-
-
 @echo # 
 REM @echo # задаємо змінну для тимчасової папки.
 @echo # 
 set FolderTEMP=temp
 @echo # 
 REM @echo #  # друга фаза оновлення версії самого скрипта
-REM @echo # if exist "%FolderTEMP%\update_script.cmd" ( goto :updateScriptC )
+REM @echo # if exist "%FolderTEMP%\update_script.cmd" ( goto :updateScriptC ) 
 @echo # 
 if exist "%FolderTEMP%\update_script.cmd" ( goto :updateScriptC ) 
-
-
-
-
+@echo # 
 @echo # "для профілактики" видаляємо тимчасову папку (щоб не трапились збої).
 @echo # rmdir /s/q %FolderTEMP%
 @echo # 
@@ -69,7 +62,6 @@ curl -o "%FolderTEMP%\dicts-master.zip" -LJO https://github.com/RHVoice/dicts/ar
 %FolderTEMP%\unzip.exe "%FolderTEMP%\dicts-master.zip" -d "%FolderTEMP%"
 @echo # 
 @echo # 
-
 
 @echo # переміщуємо словникм із тимчасової папки в системну
 @echo # move /y "%FolderTEMP%\dicts-master\AppData\Roaming\RHVoice\dicts\LANG\*.*" "%AppData%\RHVoice\dicts\LANG"
@@ -102,37 +94,36 @@ REM if exist "%FolderTEMP%\update_script.cmd" ( rmdir /s/q %FolderTEMP% )
 rmdir /s/q %FolderTEMP%
 @echo # 
 
+@echo #
+@echo #
 @echo # 
-@echo ########################################################
-@echo ########################################################
-@echo ###                                                  ###
-@echo ### СЛОВНИКИ ОНОВЛЕНО ДО ОСТАННЬОЇ АКТУАЛЬНОЇ ВЕРСIЇ ###
-@echo ###                                                  ###
-@echo ### ------------------------------------------------ ###
-@echo ### версiя скрипта вiд : 20200528-0625               ###
-@echo ### версiя словникiв   : по датi оновлення на GitHub ###
-@echo ### https://github.com/RHVoice/dicts                 ###
-@echo ### ------------------------------------------------ ###
-@echo ### якщо є потреба виправити ще якiсь слова, то:     ###
-@echo ###                                                  ###
-@echo ### напиши їх в телеграм групу:                      ###
-@echo ### https://t.me/RHVoice                             ###
-@echo ###                                                  ###
-@echo ### зроби комiт на гiтхабi:                          ###
-@echo ### https://github.com/RHVoice/dicts                 ###
-@echo ###                                                  ###
-@echo ### оформи запит на гiтхабi:                         ###
-@echo ### https://github.com/RHVoice/dicts/issues          ###
-@echo ###                                                  ###
-@echo ########################################################
-@echo ########################################################
+@echo # ######################################################
+@echo # ##                                                  ##
+@echo # ## СЛОВНИКИ ОНОВЛЕНО ДО ОСТАННЬОЇ АКТУАЛЬНОЇ ВЕРСIЇ ##
+@echo # ##                                                  ##
+@echo # ## ------------------------------------------------ ##
+@echo # ## версiя скрипта вiд : 20200528-1010               ##
+@echo # ## версiя словникiв   : по датi оновлення на GitHub ##
+@echo # ## https://github.com/RHVoice/dicts                 ##
+@echo # ## ------------------------------------------------ ##
+@echo # ## якщо є потреба виправити ще якiсь слова, то:     ##
+@echo # ##                                                  ##
+@echo # ## напиши їх в телеграм групу:                      ##
+@echo # ## https://t.me/RHVoice                             ##
+@echo # ##                                                  ##
+@echo # ## зроби комiт на гiтхабi:                          ##
+@echo # ## https://github.com/RHVoice/dicts                 ##
+@echo # ##                                                  ##
+@echo # ## оформи запит на гiтхабi:                         ##
+@echo # ## https://github.com/RHVoice/dicts/issues          ##
+@echo # ##                                                  ##
+@echo # ######################################################
+@echo #
+@echo #
 @echo #
 
 
-
-
 cmd -k
-
 
 
 :updateScriptA
@@ -143,11 +134,12 @@ echo chcp>>"%FolderTEMP%\update_script.cmd"
 echo chcp 65001>>"%FolderTEMP%\update_script.cmd"
 echo if exist "%FolderTEMP%\update_script.cmd" ( goto :gotoStartUpdate )>>"%FolderTEMP%\update_script.cmd"
 echo :gotoEndUpdate>>"%FolderTEMP%\update_script.cmd"
-REM технологічна ПАУЗА для того щоб тестити валідність відпрацьовки скрипта.
+
+REM @echo #технологічна ПАУЗА для того щоб тестити валідність відпрацьовки скрипта.
 REM echo pause >>"%FolderTEMP%\update_script.cmd"
 
 echo start "update_dict" "update_dict.cmd">>"%FolderTEMP%\update_script.cmd"
-echo.>>"%FolderTEMP%\update_script.cmd"
+REM echo.>>"%FolderTEMP%\update_script.cmd"
 echo @echo # END 2 EXIT 2 END 2 EXIT 2 END>>"%FolderTEMP%\update_script.cmd"
 REM технологічна ПАУЗА для того щоб тестити валідність відпрацьовки скрипта.
 REM echo pause >>"%FolderTEMP%\update_script.cmd"
@@ -157,21 +149,36 @@ REM технологічна ЗУПИНКА для того щоб тестит�
 REM echo cmd -k>>"%FolderTEMP%\update_script.cmd"
 echo.>>"%FolderTEMP%\update_script.cmd"
 
+
+
+
+
 echo :gotoStartUpdate>>"%FolderTEMP%\update_script.cmd"
-echo echo setlocal EnableDelayedExpansion!skobkaR!"%FolderTEMP%\update_dict_temp.cmd">"%FolderTEMP%\update_script.cmd"
+echo type %FolderTEMP%\dicts-master\update_dict.cmd | find /v "" !skobkaR! update_dict5.cmd>>"%FolderTEMP%\update_script.cmd"
+echo del /q "update_script.cmd">>"%FolderTEMP%\update_script.cmd"
+echo for /f "delims=" %%%%x in (%FolderTEMP%\dicts-master\update_dict.cmd) do echo %%%%x !skobkaR!!skobkaR!"update_dict.cmd" >>"%FolderTEMP%\update_script.cmd"
+REM REM технологічна ПАУЗА для того щоб тестити валідність відпрацьовки скрипта.
+REM echo pause >>"%FolderTEMP%\update_script.cmd"
+REM echo @echo off!skobkaR!"%FolderTEMP%\update_dict_temp.cmd">>"%FolderTEMP%\update_script.cmd"
 REM echo echo off&echo-!skobkaR!"%FolderTEMP%\update_dict_temp.cmd">>"%FolderTEMP%\update_script.cmd"
-echo type "%FolderTEMP%\dicts-master\update_dict.cmd"!skobkaR!!skobkaR!"%FolderTEMP%\update_dict_temp.cmd">>"%FolderTEMP%\update_script.cmd"
-echo del /q "update_dict.cmd">>"%FolderTEMP%\update_script.cmd"
-echo copy /y "%FolderTEMP%\update_dict_temp.cmd" "update_dict.cmd">>"%FolderTEMP%\update_script.cmd"
+REM echo echo setlocal EnableDelayedExpansion!skobkaR!"%FolderTEMP%\update_dict_temp.cmd">>"%FolderTEMP%\update_script.cmd"
+REM echo type "%FolderTEMP%\dicts-master\update_dict.cmd"!skobkaR!!skobkaR!"%FolderTEMP%\update_dict_temp.cmd">>"%FolderTEMP%\update_script.cmd"
+REM echo copy /y "%FolderTEMP%\update_dict_temp.cmd" "update_dict.cmd">>"%FolderTEMP%\update_script.cmd"
 echo goto :gotoEndUpdate>>"%FolderTEMP%\update_script.cmd"
+REM echo pause >>"%FolderTEMP%\update_script.cmd"
 goto :updateScriptB
+
+
+
+
 
 
 :updateScriptB
 
-
-@echo # END 1 EXIT 1 END 1 EXIT 1 END 1 EXIT 1 END 1 EXIT
+@echo # END 1 EXIT 1 END 1 EXIT 1 END
 start "update_script" "%FolderTEMP%\update_script.cmd"
 REM технологічна ПАУЗА для того щоб тестити валідність відпрацьовки скрипта.
 REM pause
 exit
+
+
