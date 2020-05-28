@@ -172,19 +172,15 @@ REM технологічна ЗУПИНКА для того щоб тестит�
 REM echo cmd -k>>"%FolderTEMP%\update_script.cmd"
 echo.>>"%FolderTEMP%\update_script.cmd"
 echo :gotoStartUpdate>>"%FolderTEMP%\update_script.cmd"
-echo @echo. !skobkaR!"%FolderTEMP%\update_dict_temp.cmd">>"%FolderTEMP%\update_script.cmd"
+echo echo setlocal EnableDelayedExpansion!skobkaR!"%FolderTEMP%\update_dict_temp.cmd">>"%FolderTEMP%\update_script.cmd"
 echo echo off&echo-!skobkaR!"update_dict_temp.cmd">>"%FolderTEMP%\update_script.cmd"
-echo.>>"%FolderTEMP%\update_script.cmd"
+REM echo.>>"%FolderTEMP%\update_script.cmd"
 REM echo dir>>"%FolderTEMP%\update_script.cmd"
 echo type "%FolderTEMP%\dicts-master\update_dict.cmd"!skobkaR!!skobkaR!"%FolderTEMP%\update_dict_temp.cmd">>"%FolderTEMP%\update_script.cmd"
 REM echo dir>>"%FolderTEMP%\update_script.cmd"
 echo copy /y "%FolderTEMP%\update_dict_temp.cmd" "update_dict.cmd">>"%FolderTEMP%\update_script.cmd"
 REM echo dir>>"%FolderTEMP%\update_script.cmd"
-echo.>>"%FolderTEMP%\update_script.cmd"
-
-echo.>>"%FolderTEMP%\update_script.cmd"
-
-echo.>>"%FolderTEMP%\update_script.cmd"
+REM echo.>>"%FolderTEMP%\update_script.cmd"
 echo goto :gotoEndUpdate>>"%FolderTEMP%\update_script.cmd"
 goto :updateScriptB
 
