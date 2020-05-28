@@ -8,7 +8,8 @@ chcp 65001 > nul
 @echo #################################################
 @echo # 
 @echo # This dictionary updater for RHVoice Speech Synthesizer
-@echo # (https://github.com/Olga-Yakovleva/RHVoice) OR (https://github.com/RHVoice) 
+@echo # (https://github.com/Olga-Yakovleva/RHVoice) 
+@echo # OR (https://github.com/RHVoice) 
 @echo #  
 @echo # This updater is distributed under LGPL v2.1 or later.
 @echo # Copyright (C) 2020 DictionaryTeam (https://github.com/RHVoice)
@@ -39,14 +40,14 @@ if exist "%FolderTEMP%\update_script.cmd" ( goto :updateScriptC )
 
 
 @echo # "для профілактики" видаляємо тимчасову папку (щоб не трапились збої).
-@echo # rmdir /s/q !FolderTEMP!
+@echo # rmdir /s/q %FolderTEMP%
 @echo # 
-rmdir /s/q !FolderTEMP!
+rmdir /s/q %FolderTEMP%
 @echo # 
 @echo # створюємо тимчасову папку
-@echo # mkdir !FolderTEMP!
+@echo # mkdir %FolderTEMP%
 @echo # 
-mkdir !FolderTEMP!
+mkdir %FolderTEMP%
 @echo # 
 @echo # "для профілактики" створюємо системні папки із словниками (в разі якщо їх нема).
 @echo # C:\Users\####\AppData\Roaming\RHVoice\dicts\Russian
@@ -57,24 +58,24 @@ mkdir !FolderTEMP!
 mkdir %AppData%\RHVoice\dicts\Russian
 mkdir %AppData%\RHVoice\dicts\Ukrainian
 @echo #
-@echo # curl -o "!FolderTEMP!\unzip.exe"        -LJO http://stahlworks.com/dev/unzip.exe
-@echo # curl -o "!FolderTEMP!\dicts-master.zip" -LJO https://github.com/RHVoice/dicts/archive/master.zip
-curl -o "!FolderTEMP!\unzip.exe" -LJO http://stahlworks.com/dev/unzip.exe
-curl -o "!FolderTEMP!\dicts-master.zip" -LJO https://github.com/RHVoice/dicts/archive/master.zip
+@echo # curl -o "%FolderTEMP%\unzip.exe"        -LJO http://stahlworks.com/dev/unzip.exe
+@echo # curl -o "%FolderTEMP%\dicts-master.zip" -LJO https://github.com/RHVoice/dicts/archive/master.zip
+curl -o "%FolderTEMP%\unzip.exe" -LJO http://stahlworks.com/dev/unzip.exe
+curl -o "%FolderTEMP%\dicts-master.zip" -LJO https://github.com/RHVoice/dicts/archive/master.zip
 @echo #
-@echo # розархівовуємо словники в тимчасову папку: !FolderTEMP! 
-@echo # !FolderTEMP!\unzip.exe "!FolderTEMP!\dicts-master.zip" -d "!FolderTEMP!"
+@echo # розархівовуємо словники в тимчасову папку: %FolderTEMP% 
+@echo # %FolderTEMP%\unzip.exe "%FolderTEMP%\dicts-master.zip" -d "%FolderTEMP%"
 @echo #
-!FolderTEMP!\unzip.exe "!FolderTEMP!\dicts-master.zip" -d "!FolderTEMP!"
+%FolderTEMP%\unzip.exe "%FolderTEMP%\dicts-master.zip" -d "%FolderTEMP%"
 @echo # 
 @echo #
 
 
 @echo # переміщуємо словникм із тимчасової папки в системну
-@echo # move /y "!FolderTEMP!\dicts-master\AppData\Roaming\RHVoice\dicts\LANG\*.*" "%AppData%\RHVoice\dicts\LANG"
+@echo # move /y "%FolderTEMP%\dicts-master\AppData\Roaming\RHVoice\dicts\LANG\*.*" "%AppData%\RHVoice\dicts\LANG"
 @echo # 
-move /y "!FolderTEMP!\dicts-master\AppData\Roaming\RHVoice\dicts\Russian\*.*" "%AppData%\RHVoice\dicts\Russian"
-move /y "!FolderTEMP!\dicts-master\AppData\Roaming\RHVoice\dicts\Ukrainian\*.*" "%AppData%\RHVoice\dicts\Ukrainian"
+move /y "%FolderTEMP%\dicts-master\AppData\Roaming\RHVoice\dicts\Russian\*.*" "%AppData%\RHVoice\dicts\Russian"
+move /y "%FolderTEMP%\dicts-master\AppData\Roaming\RHVoice\dicts\Ukrainian\*.*" "%AppData%\RHVoice\dicts\Ukrainian"
 @echo #
 @echo #
 @echo # Перевірка конфігураційних файлів, якщо нема - створити, якщо є - залишити такими як є.
@@ -82,8 +83,8 @@ move /y "!FolderTEMP!\dicts-master\AppData\Roaming\RHVoice\dicts\Ukrainian\*.*" 
 @echo # RHVoice.conf
 @echo # RHVoice.ini
 
-if not exist "%AppData%\RHVoice\RHVoice.conf" ( move /y "!FolderTEMP!\dicts-master\AppData\Roaming\RHVoice\RHVoice.conf" "%AppData%\RHVoice" )
-if not exist "%AppData%\RHVoice\RHVoice.ini"  ( move /y "!FolderTEMP!\dicts-master\AppData\Roaming\RHVoice\RHVoice.ini"  "%AppData%\RHVoice" )
+if not exist "%AppData%\RHVoice\RHVoice.conf" ( move /y "%FolderTEMP%\dicts-master\AppData\Roaming\RHVoice\RHVoice.conf" "%AppData%\RHVoice" )
+if not exist "%AppData%\RHVoice\RHVoice.ini"  ( move /y "%FolderTEMP%\dicts-master\AppData\Roaming\RHVoice\RHVoice.ini"  "%AppData%\RHVoice" )
 @echo # 
 
 
@@ -103,41 +104,40 @@ if not exist "%FolderTEMP%\update_script.cmd" ( goto :updateScriptA )
 
 @echo # 
 REM @echo # по закінченню роботи скрипта, видаляємо тимчасову папку.
-REM @echo # if exist "%FolderTEMP%\update_script.cmd" ( rmdir /s/q !FolderTEMP! )
+REM @echo # if exist "%FolderTEMP%\update_script.cmd" ( rmdir /s/q %FolderTEMP% )
 @echo # 
-REM if exist "%FolderTEMP%\update_script.cmd" ( rmdir /s/q !FolderTEMP! )
-rmdir /s/q !FolderTEMP!
+REM if exist "%FolderTEMP%\update_script.cmd" ( rmdir /s/q %FolderTEMP% )
+rmdir /s/q %FolderTEMP%
 @echo # 
 
 @echo # 
 @echo ########################################################
 @echo ########################################################
 @echo ###                                                  ###
-@echo ### СЛОВНИКИ ОНОВЛЕНО ДО ОСТАННЬОЇ АКТУАЛЬНОЇ ВЕРСІЇ ###
+@echo ### СЛОВНИКИ ОНОВЛЕНО ДО ОСТАННЬОЇ АКТУАЛЬНОЇ ВЕРСIЇ ###
 @echo ###                                                  ###
 @echo ### ------------------------------------------------ ###
-@echo ### версія скрипта від : 20200527-0944               ###
-@echo ### версія словників   : по даті оновлення на GitHub ###
+@echo ### версiя скрипта вiд : 20200528-0625               ###
+@echo ### версiя словникiв   : по датi оновлення на GitHub ###
 @echo ### https://github.com/RHVoice/dicts                 ###
 @echo ### ------------------------------------------------ ###
-@echo ### якщо є потреба виправити ще якісь слова, то:     ###
+@echo ### якщо є потреба виправити ще якiсь слова, то:     ###
 @echo ###                                                  ###
 @echo ### напиши їх в телеграм групу:                      ###
 @echo ### https://t.me/RHVoice                             ###
 @echo ###                                                  ###
-@echo ### зроби коміт на гітхабі:                          ###
+@echo ### зроби комiт на гiтхабi:                          ###
 @echo ### https://github.com/RHVoice/dicts                 ###
 @echo ###                                                  ###
-@echo ### оформи запит на гітхабі:                         ###
+@echo ### оформи запит на гiтхабi:                         ###
 @echo ### https://github.com/RHVoice/dicts/issues          ###
 @echo ###                                                  ###
 @echo ########################################################
 @echo ########################################################
 @echo #
-@echo # 
 
 
-exit
+
 cmd -k
 
 
@@ -145,16 +145,14 @@ cmd -k
 :updateScriptA
 set "skobkaL=<"
 set "skobkaR=>"
-echo setlocal EnableDelayedExpansion>"%FolderTEMP%\update_script.cmd"
-echo chcp>>"%FolderTEMP%\update_script.cmd"
-echo chcp 65001>>"%FolderTEMP%\update_script.cmd"
-echo.>>"%FolderTEMP%\update_script.cmd"
+REM echo setlocal EnableDelayedExpansion>"%FolderTEMP%\update_script.cmd"
+REM echo chcp>>"%FolderTEMP%\update_script.cmd"
+REM echo chcp 65001>>"%FolderTEMP%\update_script.cmd"
+echo.>"%FolderTEMP%\update_script.cmd"
 echo if exist "%FolderTEMP%\update_script.cmd" ( goto :gotoStartUpdate )>>"%FolderTEMP%\update_script.cmd"
 echo :gotoEndUpdate>>"%FolderTEMP%\update_script.cmd"
 echo.>>"%FolderTEMP%\update_script.cmd"
 REM echo cd..>>"%FolderTEMP%\update_script.cmd"
-echo dir>>"%FolderTEMP%\update_script.cmd"
-echo.>>"%FolderTEMP%\update_script.cmd"
 echo.>>"%FolderTEMP%\update_script.cmd"
 REM технологічна ПАУЗА для того щоб тестити валідність відпрацьовки скрипта.
 REM echo pause >>"%FolderTEMP%\update_script.cmd"
@@ -171,9 +169,10 @@ echo exit>>"%FolderTEMP%\update_script.cmd"
 REM технологічна ЗУПИНКА для того щоб тестити валідність відпрацьовки скрипта.
 REM echo cmd -k>>"%FolderTEMP%\update_script.cmd"
 echo.>>"%FolderTEMP%\update_script.cmd"
+echo echo off&echo-!skobkaR!"%FolderTEMP%\update_dict_temp.cmd">>"%FolderTEMP%\update_script.cmd"
 echo :gotoStartUpdate>>"%FolderTEMP%\update_script.cmd"
-echo echo setlocal EnableDelayedExpansion!skobkaR!"%FolderTEMP%\update_dict_temp.cmd">>"%FolderTEMP%\update_script.cmd"
-echo echo off&echo-!skobkaR!"update_dict_temp.cmd">>"%FolderTEMP%\update_script.cmd"
+REM echo echo setlocal EnableDelayedExpansion!skobkaR!"%FolderTEMP%\update_dict_temp.cmd">>"%FolderTEMP%\update_script.cmd"
+
 REM echo.>>"%FolderTEMP%\update_script.cmd"
 REM echo dir>>"%FolderTEMP%\update_script.cmd"
 echo type "%FolderTEMP%\dicts-master\update_dict.cmd"!skobkaR!!skobkaR!"%FolderTEMP%\update_dict_temp.cmd">>"%FolderTEMP%\update_script.cmd"
