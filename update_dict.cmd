@@ -105,7 +105,7 @@ if not exist "%FolderTEMP%\update_script.cmd" ( goto :updateScriptA )
 REM @echo # по закінченню роботи скрипта, видаляємо тимчасову папку.
 REM @echo # if exist "%FolderTEMP%\update_script.cmd" ( rmdir /s/q !FolderTEMP! )
 @echo # 
-if exist "%FolderTEMP%\update_script.cmd" ( rmdir /s/q !FolderTEMP! )
+REM if exist "%FolderTEMP%\update_script.cmd" ( rmdir /s/q !FolderTEMP! )
 rmdir /s/q !FolderTEMP!
 @echo # 
 
@@ -137,7 +137,7 @@ rmdir /s/q !FolderTEMP!
 @echo # 
 
 
-
+exit
 cmd -k
 
 
