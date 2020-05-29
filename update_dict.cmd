@@ -92,7 +92,7 @@ rmdir /s/q %FolderTEMP%
 @echo # ## (якщо не оновилось не все, запусти повторно)     ##
 @echo # ##                                                  ##
 @echo # ## ------------------------------------------------ ##
-@echo # ## версiя скрипта вiд : 20200529-0348               ##
+@echo # ## версiя скрипта вiд : 20200529-0355               ##
 @echo # ## версiя словникiв   : по датi оновлення на GitHub ##
 @echo # ## https://github.com/RHVoice/dicts                 ##
 @echo # ## ------------------------------------------------ ##
@@ -123,20 +123,14 @@ echo start "update_dict" "update_dict.cmd">>"%FolderTEMP%\update_script.cmd"
 echo @echo # END 2 EXIT 2 END 2 EXIT 2 END>>"%FolderTEMP%\update_script.cmd"
 echo exit>>"%FolderTEMP%\update_script.cmd"
 echo.>>"%FolderTEMP%\update_script.cmd"
-
 echo :gotoUpdateStart>>"%FolderTEMP%\update_script.cmd"
-echo ########################################################>>"%FolderTEMP%\update_script.cmd"
-echo if exist "%FolderTEMP%\dicts-master\update_dict.cmd" ( goto :gotoDelStart )>>"%FolderTEMP%\update_script.cmd"
-echo :gotoDelEnd >>"%FolderTEMP%\update_script.cmd"
-echo goto :gotoUpdateEnd >>"%FolderTEMP%\update_script.cmd"
-echo ########################################################>>"%FolderTEMP%\update_script.cmd"
-echo :gotoDelStart>>"%FolderTEMP%\update_script.cmd"
-echo del /q "update_dict.cmd">>"%FolderTEMP%\update_script.cmd"
-echo for /f "delims=" %%%%x in (%FolderTEMP%\dicts-master\update_dict.cmd) do (>>"%FolderTEMP%\update_script.cmd"
-echo %%%%x %skobkaR%%skobkaR%"update_dict.cmd">>"%FolderTEMP%\update_script.cmd"
-echo )>>"%FolderTEMP%\update_script.cmd"
-echo goto :gotoDelEnd>>"%FolderTEMP%\update_script.cmd"
-echo ########################################################>>"%FolderTEMP%\update_script.cmd"
+echo if exist "%FolderTEMP%\dicts-master\update_dict.cmd" ( del /q "update_dict.cmd" )>>"%FolderTEMP%\update_script.cmd"
+echo for /f "delims=" %%%%x in (%FolderTEMP%\dicts-master\update_dict.cmd) do echo %%%%x %%skobkaR%%%%skobkaR%%"update_dict.cmd">>"%FolderTEMP%\update_script.cmd"
+echo goto :gotoUpdateEnd>>"%FolderTEMP%\update_script.cmd"
+goto :updateScriptB
+:updateScriptB
 @echo # END 1 EXIT 1 END 1 EXIT 1 END
 start "update_script" "%FolderTEMP%\update_script.cmd"
+REM технологічна ПАУЗА для того щоб тестити валідність відпрацьовки скрипта.
+REM pause
 exit
