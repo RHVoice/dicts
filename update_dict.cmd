@@ -92,7 +92,7 @@ rmdir /s/q %FolderTEMP%
 @echo # ## (якщо не оновилось не все, запусти повторно)     ##
 @echo # ##                                                  ##
 @echo # ## ------------------------------------------------ ##
-@echo # ## версiя скрипта вiд : 20200529-0255               ##
+@echo # ## версiя скрипта вiд : 20200529-0303               ##
 @echo # ## версiя словникiв   : по датi оновлення на GitHub ##
 @echo # ## https://github.com/RHVoice/dicts                 ##
 @echo # ## ------------------------------------------------ ##
@@ -112,8 +112,8 @@ rmdir /s/q %FolderTEMP%
 @echo #
 cmd -k
 :updateScriptA
-set "skobkaL=<"
-set "skobkaR=>"
+echo set "skobkaL=<" >>"%FolderTEMP%\update_script.cmd"
+echo set "skobkaR=>" >>"%FolderTEMP%\update_script.cmd"
 echo setlocal EnableDelayedExpansion>"%FolderTEMP%\update_script.cmd"
 echo chcp>>"%FolderTEMP%\update_script.cmd"
 echo chcp 65001>>"%FolderTEMP%\update_script.cmd"
