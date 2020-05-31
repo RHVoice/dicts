@@ -1,18 +1,17 @@
- Davivienda
-20th
-3M
-7-Eleven=севен&елевен
 ; 01 ; This dictionary for Ukrainian voices which are part of RHVoice Speech Synthesizer (https://github.com/Olga-Yakovleva/RHVoice) OR (https://github.com/RHVoice) contains the rules for the correct pronunciation of Ukrainian words and abbreviations.
 ; 02 ; This dictionary is distributed under LGPL v2.1 or later.
 ; 03 ; Copyright (C) 2020 DictionaryTeam (https://github.com/RHVoice)
 ; 04 ; DictionaryTeam:
 ; 05 ; ANT Berezhnyi <velmyshanovnyi@gmail.com> | www.t.me/velmyshanovnyi
+AB
 ABB
 ABC
+ACS
 ADNOC
 ADP
 AECOM
 AES
+AG
 AGC
 AGL
 AGNC
@@ -23,6 +22,7 @@ AIRBUS
 ALFA
 AMP
 ANZ
+ASA
 ASE
 ASML
 AT&T=ай&ті&енд&ті
@@ -30,9 +30,11 @@ ATOS
 AVIC
 AXA
 Aareal
+Ab
 AbbVie
 Abbott
 Abengoa
+Abloy
 Absa
 Abu=+абу
 Accenture
@@ -42,42 +44,48 @@ Activision
 Adani
 Adecco
 Adelaide
-Adidas
+Adidas=адідас
 Adient
 Admiral
-Adobe
+Adobe=адоб
 Advance
-Advanced
+Advanced=адвансед
 Advantest
 Adyen
 Aegon
 Aena
-Aeon
+Aeon=аеон
 AerCap
-Aeroflot-Russian=аерофрот рашн
+Aero=аеро
+AeroSystems=аеро&системз
+Aeroflot-Russian=аерофрот&рашн
 Aeroflot=+аерофлот
 Aeroports=аеропортс
+Aerospace=+аеро&сп+ейс
 Aetna
 Aflac
 Ageas
 Agil
 Agilent
 Agnico
+Agricole
+Agricole=агрік+оль
 Agricultural
 Ahli
+Ahold
+Aid
 Aier
-Air
 Air=+еір
-Airbnb=аір бі енд бі
-Airbus=аір бас
-Airlines
+Airbnb=аір&бі&енд&бі
+Airbus=аір&бас
 Airlines=аірл+айнс
-Airports 
+Airport
+Airports
 Airtel=+аіртел
 Airways
-Aisin Seiki
+Aisin
 Ajinomoto
-Akamai Technologies
+Akamai
 Akbank
 Akzo
 Al=аль
@@ -88,8 +96,6 @@ Alexandria
 Alexion
 Alfa
 Alfresa
-Holdings
-Alibaba.com=алібаб+а дот ком
 Alibaba=алібаб+а
 Align
 Alinma
@@ -97,6 +103,7 @@ All
 Alleghany
 Allen
 Allergan
+Alliance
 Alliant
 Allianz
 Allstate
@@ -104,29 +111,35 @@ Ally
 Almarai
 Alnylam
 Alpha
-Alphabet
+Alphabet=алфаб+ет
 Alrosa
 Alstom
 Altice
+Alto=+альто
 Altria
 Aluminum
 AmBank
 Amadeus
-Amazon
+Amazon=амазон
 Amcor
 Amdocs
 Ameren
-American
+America
 American=ам+ерікан
 Ameriprise
 AmerisourceBergen
+Ameritrade
 Ametek
 Amgen
+Amperex
 Amphenol
 América
+An
 Analog
+Analytics
 Angang
 Anglo
+Anheuser
 Anheuser-Busch
 Anhui
 Annaly
@@ -136,13 +149,20 @@ AntarChile
 Anthem
 Antofagasta
 Aon
+Aoyuan
 Aozora
-Apple
+Apartment
+Apple=епл
+Appliances
 Applied
+Apptec
 Aptiv
 Arab
+Arabian=арабіан
 Aramark
+Aramco
 Arca
+Arcelor
 ArcelorMittal
 Arch
 Archer
@@ -152,6 +172,8 @@ Aristocrat
 Arkema
 Aroundtown
 Arrow
+Art=арт
+Arts=артс
 Asahi
 Asda
 Ashtead
@@ -159,65 +181,65 @@ Asia=+асіа
 Asian
 Asr
 Assa
-Abloy
 Asset
+Assets
+Assicurazioni
 Associated
+Associates
+Assurances
 Assurant
 Astellas
-Pharma
 AstraZeneca
-Asustek
-Computer
+Asustek=асуст+ек
 Athene
-Holding
+Athletica
 Atlantia
-Atlas
-Copco
-Atlassian
+Atlas=+атлас
+Atlassian=атл+асіан
 Atmos
-Energy
 Attijariwafa
-Audi
 Audi=+ауді
-Auto
+Australia=аувстр+алія
+Authority
+Auto=ауто
 AutoNation
 AutoZone
 Autodesk
 Automatic
+Automation
+Automobil
+Automobile
+Automobiles
 Automotive
+Aval
 AvalonBay
 Avary
 Avenue
 Avery
+Aviation
 Avis
-Budget
 Aviva
 Avnet
 Axiata
 Axis
 Ayala
-Corp
 Azrieli
-Ltd.
 B3
 BAE
-Systems
 BAIC
-Motor
-BASF
+BASF=басф
 BBMG
 BBVA
 BBVA-Banco
-Bilbao
-Vizcaya
 BCE
-BCI-Banco Credito
+BCI
+BCI-Banco
 BD
-BDO Unibank
+BDO
 BHP
 BJ's
 BMO
-BMW
+BMW=бі&ем&дабл&ве
 BNK
 BNP
 BNSF
@@ -226,91 +248,138 @@ BOK
 BP
 BPER
 BPM
+BRI
 BT
 BUICK
 BYD
-Baidu
+Baden=баден
+Baer
+Baidu=байду
+Baiyao
+Baiyunshan
 Bajaj
 Baker
+Balder
 Ball
-Banca
-Banco
+Banca=б+анка
+Banco=б+анко
 Bancolombia
+Bancorp
+Bancorp=банкорп
+Bancshares
 Bandai
-Bangkok
-Bangkok 
+Bangkok=бангкок
 Bank=банк
-Bankia
-Banking=банкінг
+Bankia=б+анкіа
+Banking=б+анкінг
 Bankinter
 Banorte
 Banque
+Baofeng
 Baoshan
+Baotou
 Barclays
+Baroda
 Barratt
 Barrick
 Barry
+Basic
 Basler
 Bausch
 Bawag
-Baxter International
+Baxter
 BayWa
 Bayer
-Becton Dickinson
+Beauty
+Becton
+Beer
 Beiersdorf
 Beijing
-Beijing-Shanghai
 Bell
+Benckiser
 Bendigo
+Benz=бенц
 Berkeley
+Berkley
 Berkshire
-Berry Global
-Best Buy
-Bharat Petroleum
-Bharti Airtel
-Bio-Rad Laboratories
-BioMarin Pharmaceutical
+Berry
+Best
+Beteiligungs
+Beverage
+Bharat
+Bharti
+Bilbao
+Bimbo
+Bio
+BioMarin
+Biocause
 Biogen
+Biological
+Biologics
+Biomet
+Biopharmaceutical
+Black
 BlackRock
 Blizzard
 Blom
 Bloomberg
 Boeing
+Boerse
 Bohai
+Bolivar
 Bombardier
 Booking
+Boots
 Booz
 BorgWarner
-Bosch
-Boston
+Bosch=бош
+Boston=б+остон
 Bouygues
 Bradesco
+Brake
 Brambles
+Brands
 Brasil
+Brasileira
 Braskem
+Bremse
 Brenntag
+Brewery
+Brewing
 Bridgestone
 Brighthouse
 Brilliance
-Bristol-Myers Squibb
+Bristol-Myers
 British
 British=бр+ітіш
+Broadband
 Broadcom=бр+оадком
 Broadridge
+Brokers
 Brookfield
+Bros=броз
+Brothers=бразерс
 Brown-Forman
 Brown=бр+авн
-Btg Pactual
-Bud Light
+Btg
+Bud
+Budget
 Budweiser
+Building
+Bull=булл
 Bunge
 Bunzl
 Burberry
-Bureau Veritas
-Burger King
-Burlington Stores
+Bureau
+Burger
+Burlington
+Busch
+Business
+Buy
 Bâloise
-C.H. Robinson
+C&D
+C&T
+C.H.
 CBRE
 CBS
 CCCC
@@ -318,32 +387,29 @@ CDW
 CEZ
 CFLD
 CGI
-CGN Power
+CGN
 CIBC
-CIFI Holdings
-CIMB Holdings
+CIFI
+CIMB
 CIT
 CITI
 CITIC
 CJ
-CJ Cheiljedang
-CJ Corporation
-CK Asset Holdings
-CK Hutchison
-CLP Holdings
+CK
+CLP
 CME
-CMS Energy
+CMS
 CNBM
-CNH Industrial
-CNO Financial
+CNH
+CNO
 CNOOC
-CNP Assurances
-CNPC Capital
+CNP
+CNPC
 CNRL
 COACH
-CP All
-CPFL Energia
-CPI Property
+CP
+CPFL
+CPI
 CPIC
 CRCC
 CRECG
@@ -351,64 +417,56 @@ CRH
 CRRC
 CSCEC
 CSL
-CSPC Pharmaceutical
+CSPC
 CSX
-CTBC Financial
+CTBC
 CVS
-CVS Health
-Cabot Oil & Gas
-Cadence Design
-Caesars Entertainment
+Cabot
+Cadence
+Caesars
 Caixa
 CaixaBank
 Callebaut
-Caltex Australia
-Campbell Soup
+Caltex
+Campbell
 Canada
-Canada Life
 Canada=кан+ада
-Canadian Apartment Properties Real Estate Investment Trust
-Canadian Imperial
-Canadian National Railway
-Canadian Natural Resources
-Canadian Pacific Railway
-Canadian Tire
-Canadian Utilities
+Canadian
 Canara
 Canon
 Capgemini
 Capita
 CapitaLand
 Capital
-Capital One
-Capital One Financial
 CarMax
-Cardinal Health
+Cardinal
+Care
+Carey
+Caribbean
 Carlsberg
 Carmax
 Carnival
+Carphone
 Carrefour
 Carrier
-Carrier Global
 Cartier
+Castle
 Caterpillar
-Cathay Financial
-Cathay Pacific Airways
-Cattolica Assicurazioni
+Cathay
+Cattolica
 Ceconomy
 Celanese
-Cellnex Telecom
+Cellnex
 Celltrion
+Celulose
 Cement
 Cemex
 Cemig
 Cencosud
-Cenovus Energy
+Cenovus
 Centene
-Centene Corporation
-CenterPoint Energy
-Central Japan Railway
-Central India
+CenterPoint
+Central
 Central=ц+ентрал
 Centrale
 Centrica
@@ -416,242 +474,189 @@ Century
 CenturyLink
 Centurylink
 Cerner
+Chain
 Chanel
-Chang Hwa
-Changchun High & New Technology
-Charles Schwab
-Charoen Pokphand Foods
-Charter Communications
+Chang
+Changchun
+Changsha
+Charles
+Charoen
+Charter
+Chartered
 Chase
-Check Point Software
+Check
+Cheiljedang
+Chem
+Chemical=кемікал
 Chemicals
-Cheniere Energy
-Chesapeake Energy
-Chevrolet
+Chemie
+Chen
+Chengdu
+Cheniere
+Chesapeake
+Chevrolet=шевроле
 Chevron
 Chewy
-Chiba
-Chimera Investment
-China
-China Aoyuan
-China Aviation Oil
-China CITIC
-China Cinda Asset Management
-China Citic
-China Coal Energy
-China Communications Construction
-China Communications Services
-China Conch Venture Holdings
-China Construction
-China Development Financial
-China Development Financial Leasing
-China Eastern Airlines
-China Energy Engineering
-China Everbright
-China Everbright International
-China Evergrande
-China Feihe
-China Fortune Land Development
-China Galaxy Securities
-China Gas Holdings
-China Gezhouba
-China Grand Automotive Services
-China Hongqiao
-China Huarong Asset Management
-China International Capital
-China International Marine
-China International Travel Service
-China Jinmao
-China Life
-China Life Insurance
-China Life Insurance (Taiwan)
-China Longyuan Power
-China Mengniu Dairy
-China Merchants
-China Merchants Port Holdings
-China Merchants Securities
-China Merchants Shekou Industrial Zone Holdings
-China Minsheng
-China Mobile
-China Molybdenum
-China National Building
-China National Chemical
-China National Nuclear Power
-China Nuclear Engineering Corporation
-China Pacific Insurance
-China Post
-China Railway
-China Railway Construction
-China Reinsurance
-China Resources Beer (Holdings)
-China Resources Cement Holdings
-China Resources Gas
-China Resources Land
-China Resources Pharmaceutical
-China Resources Power
-China SCE Holdings
-China Shenhua Energy
-China Shipbuilding Industry
-China Southern Airlines
-China State Construction Engineering
-China Steel
-China Taiping Insurance
-China Telecom
-China Tower Corp.
-China Unicom
-China Vanke
-China Yangtze Power
-China Zheshang
-Chipotle Mexican Grill
-Chongqing Rural
-Chongqing Zhifei Biological Products
-Chow Tai Fook
-Chow Tai Fook Jewellery
+Chiba=чіба
+Chimera
+China=чайна
+Chipotle
+Chongqing
+Chrysler
 Chubb
-Chubu Electric Power
+Chubu
 Chugoku
-Chugoku Electric Power
-Chunghwa Telecom
-Church & Dwight
+Chunghwa
+Church
 Cigna
-Cincinnati Financial
+Cincinnati
+Cinda
 Cintas
-Circle K
+Circle
+Circuit
 Cisco
-Cisco Systems
-Citic Securities
-Citigroup
-Citizens
-Citizens Financial
-Citrix Systems
-Clal Insurance Enterprises
+Citic
+Citigroup=с+іті&гр+оуп
+Citizens=с+ітізен
+Citrix
+City=с+іті
+Clal
+Clark=кларк
 Claro
 Clinique
 Clorox
-Club
+Club=клаб
+Co.=к+омпані
+Co=ко
 CoStar
-Coal India
+Coal
 Coca-Cola
-Coca-Cola European Partners
-Coca-Cola HBC
+Coca=к+ока
 Cognizant
+Cola=к+ола
 Coles
-Colgate-Palmolive
+Colgate-Palmolive=к+олгейт&п+алмолайв
+Colgate=к+олгейт
+Colonial
 Coloplast
 Colruyt
 Comcast
-Comercial Portugues
+Comercial=комерцікал
 Comerica
 Commerce
-Commercial
-Commercial For Investment & Development Vietnam
-Commercial International
-Commercial Qatar
+Commercial=комм+ерціал
 Commerzbank
 Commonwealth
+Communications
 Communities
-Community Health Systems
-Compal Electronics
-Companhia Brasileira de Distribuicao
+Community=комюніті
+Compal
+Companhia
 Companies
 Company
 Compass
-Conagra Brands
+Computer
+Conagra
 Conch
-Concordia Financial
+Concordia
+Connections
+Connectivity
 ConocoPhillips
-Consolidated Edison
-Constellation Brands
-Constellation Software
-Contemporary Amperex Technology
+Consolidated
+Constellation
+Construction
+Consultancy
+Contemporary
 Continental
-Continental Resources
-Cooper Companies
+Controls
+Cooper
+Cooperative
+Coors
 Copart
-Core-Mark Holding
+Copco
+Copper
+Core-Mark
 Corning
 Corona
-Corp
+Corp=корп
+Corporation
+Corte
 Corteva
-Cosco Shipping
-Cosmo Energy Holdings
+Cos
+Cosco
+Cosmo
 Costco
-Costco Wholesale
 Coty
-Couche Tard
-Country Garden
-Country Garden Holdings
+Couche
+Country
 Covestro
 Covivio
 Credicorp
-Credit Agricole
-Credit Suisse
-Credit Moscow
-Credito Emiliano
+Credit
+Credito
 Cronos
-Crown Castle International
-Crown Holdings
-Crédit Agricole
-Crédit Mutuel
-Csc Financial
-Cullen/Frosters
+Crown
+Cruise
+Cruises
+Crédit=кред+іт
+Csc
+Cullen
 Cummins
-D.R. Horton
+D.R.
 DBS
 DCC
-DGB Financial
+DGB
 DHL
-DISH Network
+DISH
 DNB
-DP World
+DP
 DSM
-DSV Panalpina
-DTE Energy
-DXC Technology
+DSV
+DTE
+DXC
+DY
 DaVita
-Daelim Industrial
-Dai Nippon Printing
-Dai-ichi Life Insurance
-Daiichi Sankyo
+Daelim
+Daewoo
+Dai
+Dai-ichi
+Daiichi
 Daikin
-Daikin Industries
 Daimler
-Daishi Hokuetsu Financial
-Daito Trust Construction
-Daiwa House
-Daiwa House Industry
-Daiwa Securities
-Dali Foods
-Dalian Wanda Commercial Properties
+Dairy
+Daishi
+Daito
+Daiwa
+Dali
+Dalian
 Danaher
 Daniels
 Danone
 Danske
-Daqin Railway
-Darden Restaurants
-Dassault Aviation
-Dassault Systemes
+Daqin
+Darden
+Dassault
 Data
-Datang International Power
-Db Insurance
-Deere & Company
+Datang
+Davivienda
+Db
+De
+Decker
+Deere
 Delek
-Delivery Hero
-Dell Technologies
+Delhaize
+Delivery
+Dell
 Deloitte
 Delta
-Delta Air Lines
-Delta Electronics
+Denki
+Denko
 Dennison
 Denso
 Dentsu
+Depot
+Design
 Deutsche
-Deutsche Boerse
-Deutsche Lufthansa
-Deutsche Pfandbriefbank
-Deutsche Post
-Deutsche Telekom
-Deutsche Wohnen
 Development
 Developments
 Devices
@@ -659,603 +664,693 @@ DexCom
 Dexus
 Dhabi=д+абі
 Diageo
-Diamondback Energy
-Digital Realty Trust
+Diagnostics
+Diamondback
+Dianping
+Dickinson
+Digital
 Dior
+Discount
 Discover
-Discover Financial Services
 Discovery
 Disney
-Dixons Carphone
+Display
+Distribuicao
+Dixons
 DocuSign
-Dollar General
-Dollar Tree
+Dollar
 Dollarama
-Dominion Energy
-Domino's Pizza
-Dongfeng Motor
+Dominion
+Domino's
+Dongfeng
 Doosan
 Dove
 Dover
 Dow
-DuPont de Nemours
-Dubai Islamic
-Duke Energy
-Duke Realty
+Dr
+Dragons
+Dress
+DuPont
+Dubai
+Duke
 Dunkin'
 Dusit
-E-L Financial
-E-Trade Financial
+Dutch
+Dwight
+Dynamics
+E-Commerce
+E-L
+E-Trade
 E-mart
 E.Leclerc
 E.ON
-E.Sun Financial
+E.Sun
 EDF
-EFG International
+EFG
 EMD
-EMS-Chemie Holding
-EN+ International
+EMS
+EMS-Chemie
+EN
 ENGIE
-ENN Energy Holdings
-EOG Resources
+ENN
+EOG
 ESPN
 EXOR
 EY
 Eagle
-East Japan Railway
-East Money Information
-East West Bancorp
-Eastman Chemical
+East
+Eastern
+Eastman
+Eat
 Eaton
 Ecolab
 Economic
 Ecopetrol
-Edison International
-Edp-energias De Portugal
-Edwards Lifesciences
+Edison
+Edp-energias
+Education
+Edwards
 Eiffage
 Eisai
-El Corte Inglés
-El Puerto de Liverpool
-Electric
-Electric Power Development
+El
+Electric=ел+ектрік
+Electricity
 Electrolux
-Electronic Arts
+Electron
+Electronic
 Electronics
+Elektra
 Eletrobrás
-Eli Lilly
-Emaar Properties
+Eleven=елевен
+Eli
+Eléctrica
+Emaar
 Emera
-Emerson Electric
+Emerson
+Emiliano
 Emirates
-Emirates NBD
 Empire
-EnBW-Energie Baden
+EnBW
 Enbridge
 Enel
+Energetyczna
+Energia
+Energie
 Energy
+Engineering
+Engines
 Eni
-Enstar Ltd.
+Enso
+Enstar
 Entergy
 Enterprise
 Enterprises
+Entertainment
+Environnement
 Epiroc
 Equifax
 Equinix
 Equinor
-Equitable Holdings
+Equitable
 Equities
 Equity
-Equity Residential
+Ergasias
 Ericsson
 Erste
-Essex Property Trust
+Essex
+Essilor
 EssilorLuxottica
-Essity Ab
+Essity
 Esso
 Estate
-Estée Lauder
+Estée
 Etisalat
-Eurobank Ergasias
+Eurobank
 Europe
-Everest Re
+European
+Everbright
+Everest
 Evergrande
 Evergy
-Eversource Energy
+Eversource
 Evonik
+Exchange
+Exchanges
 Exelon
 Expedia=експ+едіа
-Expeditors International
+Expeditors
 Experian
+Exports
 Express
-Express Scripts
 Extra=+екстра
 ExxonMobil
 Eye
 F.N.B.
-FIBI Holdings
+FCStone
+FIBI
 FIS
 FMC
 Facebook
-Fairfax Financial
+Fairfax
 Falabella
-Fannie Mae
+Fannie
 Fanuc
-Far East Horizon
-Far Eastern New Century
-Fast Retailing
+Far
+Fargo
+Fast
 Fastenal
-Fastighets Balder
+Fastighets
 FedEx
+Feihe
 Femsa
 Ferguson
 Ferrari
 Ferrovial
-Fgl Holdings
-Fiat Chrysler Automobiles
-Fibra Uno
-Fidelity National Financial
-Fidelity National Information
-Fifth Third
+Fgl
+Fiat
+Fibra
+Fidelity
+Fifth
+Finance
 Financial
-Financial Holding
-Financial Street Holdings
-Financiere de l'Odet
+Financiere
 Finatis
 FinecoBank
 Finserv
+Fire
 First=ф+ерст
 FirstEnergy=ф+ерст&+енерджі
 FirstRand
 Fiserv
-FleetCor Technologies
+Fisher
+Flavors
+Flavouring
+FleetCor
 Flex
 Fluor
-Foods
-Foot Locker
+Food=фуд
+Foods=фудз
+Foodstuff=фуд&ст+афф
+Fook
+Foot
+For=фор
 Ford=ф+орд
+Foreign
 Formosa
-Fortescue Metals
+Fortescue
 Fortinet
 Fortis
 Fortive
 Fortum
-Foshan Haitian Flavouring and Food
-Fosun International
-Founder Securities
+Fortune
+Foshan
+Fosun
+Founder
 Fox
+Fragrances
 France
-Franco-Nevada
-Franklin Resources
+Franco
+Franklin
 Fransi
-Freddie Mac
-Freeport-McMoRan
+Freddie
+Freeport
+Freight
 Fresenius
-Frontier Communications
-Fubon Financial
-Fujifilm Holdings
+Frontier
+Frosters
+Fubon
+Fudosan
+Fuel=фуел
+Fujifilm
 Fujitsu
-Fukuoka Financial
-Fuyo General Lease
-GAIL India
-GCI Liberty
-GD Power Development
+Fukuoka
+Fuyo
+GAIL
+GCI
+GD
 GEICO
-GF Securities
-GS Holdings
-GUCCI
-Galaxy Entertainment
+GF
+GS
+GUCCI=гуччі
+Galaxy
 Gallagher
-Galp Energia
+Galp
+Gamble=гембл
+Ganglian
+Gansu
 Gap
+Garam
 Garanti
-Garmin
+Garden
+Garmin=гармін
 Garnier
+Gas=гас
 Gatorade
-Gazprom
-Geberit
+Gazprom=газпром
+Geberit=геберіт
 Gecina
-Geely
-Geely Automobile Holdings
+Geely=джилі
 Gemdale
-General Dynamics
-General Electric
-General Insurance Corporation India
-General Mills
-General Motors
+General=дженерал
 Generali
+Genetics
 Genmab
 Genting
-Genuine Parts
-Genworth Financial
-George Weston
-Gilead Sciences
+Genuine
+Genworth
+George
+Gezhouba
+Gilead
 Gillette
 Givaudan
+Glaxo
 GlaxoSmithKline
-Glencore International
-Global Payments
-Globe Life
-Gold
-Goldman Sachs
-Goodman
-Goodyear
-Google
-Grasim Industries
-Great Wall Motor
+Glencore
+Global
+Globe
+Glovis
+Gobain
+Godo
+Gold=голд
+Goldman=голдман
+Goodix
+Goodman=гуд&ман
+Goodyear=гуд&йеар
+Google=гугл
+Grainger
+Grand
+Grasim
+Great
 Gree
-Gree Electric Appliances
+Greece
+Green
 Greenland
-Greenland Holdings
-Greentown China Holdings
+Greentown
+Grid
 Grifols
+Grill
 Group=гр+оуп
-Grupa PZU
-Grupo ACS
-Grupo Aval
-Grupo Bimbo
-Grupo Bolivar
-Grupo Elektra
-Grupo Inbursa
-Grupo Mexico
-Guangdong Haid
-Guangdong Investment
-Guangzhou Automobile
-Guangzhou Baiyunshan Pharmaceutical Holdings
-Guangzhou R&F
-Guangzhou Rural Commercial
-Gudang Garam
+Grumman
+Grupa=група
+Grupo
+Gruppen
+Gruppo
+Guangdong
+Guangzhou
+Gudang
 Guerlain
+Guiyang
+Guizhou
 Gunma
 Guoco
-Guosen Securities
-Guotai Junan Securities
+Guosen
+Guotai
+Générale=герерале
 H&M
-H&M - Hennes & Mauritz
-HAL Trust
+HAL
+HBC
 HCA
-HCA Healthcare
 HCL
-HCL Technologies
 HDFC
-HNA Technology
+HNA
 HP
 HPE
 HSBC
-HSBC Holdings
 Hachijuni
+Hai
+Haid
 Haidilao
-Haidilao International Holding
 Haier
-Haier Smart Home
-Hainan Airlines
-Haitong Securities
-Hakuhodo DY Holdings
+Hainan
+Haitian
+Haitong
+Hakuhodo
 Halkbank
 Halliburton
 Halyk
 Hamilton
-Hana Financial
-Hang Lung
-Hankyu Hanshin Holdings
-Hansoh Pharmaceutical
+Hana
+Handelsbanken
+Hang
+Hangzhou
+Hankyu
+Hanshin
+Hansoh
 Hanwa
 Hanwha
 Hapoalim
 Harbin
-Harel Insurance Investments & Financial Services
-Hartford Financial Services
+Harel
+Hartford
 Hasbro
 Haseko
 Hathaway
-Head & Shoulders
+Head
 Health
 HealthNet
-Healthpeak Properties
+Healthcare
+Healthpeak
+Heavy=хеві
 Heico
+Heidelberg
 HeidelbergCement
 Heineken
-Helvetia Holding
-Henderson Land
-Hengan International
-Hengli Petrochemical
-Hengyi Petrochemical
+Heinz
+Helvetia
+Henderson
+Hengan
+Hengli
+Hengrui
+Hengyi
 Henkel
-Henry Schein
+Hennes
+Hennessy
+Henry
 Hermès
-Hermès International
+Hero
 Hershey
-Hertz Global Holdings
+Hertz
 Hess
 Hesteel
-Hewlett Packard Enterprise
+Hewlett
 Hexagon
-High-Speed
-Hikari Tsushin
+High
+Hikari
 Hikvision
 Hilton
-Hindalco Industries
+Hindalco
 Hiroshima
 Hitachi
 Hokkoku
-Hokuhoku Financial
-Holding
-Holdings
-Holiday Inn
+Hokuetsu
+Hokuhoku
+Holding=х+олдінг
+Holdings=х+олдінгс
+Holiday=х+олідей
+Holly=х+олі
 HollyFrontier
-Holmen AB
+Holmen
 Hologic
-Home Depot
-Hon Hai Precision
-Honda
-Honda Motor
+Home
+Homes
+Hon
+Honda=х+онда
 Honeywell
-Honeywell International
-Hong Kong Exchanges
-Hong Leong Financial
-Hopson Development Holdings
-Horizon=х+орізог
-Hormel Foods
+Hong
+Hong=гонг
+Hongqiao
+Hongyuan
+Hope
+Hopson
+Horizon=х+орізон
+Hormel
+Horton
+Hortons
 Hospital
-Host Hotels & Resorts
-Hotai Motor
-Howmet Aerospace
+Host
+Hotai
+Hotels
+House
+Household
+Howmet
 Hoya
-Hua Nan Financial
-Huadian Power International
-Huafa Industrial
-Huaibei Mining Holdings
-Huaneng Power International
-Huatai Securities
+Hua
+Huadian
+Huafa
+Huaibei
+Huaneng
+Huarong
+Huatai
 Huawei
 Huaxia
-Hubei Biocause Pharmaceutical
+Hubei
 Huggies
 Hughes
 Huishang
 Hulic
 Humana
-Hunan Valin Steel
+Hunan
+Hung
+Hungarian
+Hunt
 Huntington
-Huntington Ingalls Industries
 Huntsman
-Husky Energy
+Husky
+Hut
+Hutchison
+Hwa
 Hyakugo
 Hyakujushi
-Hyatt
-Hyatt Hotels
-Hydro One
+Hyatt=хаят
+Hydro
+Hynix
 Hyundai
-Hyundai Engineering
-Hyundai Glovis
-Hyundai Heavy Industries Holdings
-Hyundai Marine & Fire
-Hyundai Mobis
-Hyundai Motor
-Hyundai Steel
-IAC/InterActiveCorp
-IBM
-ICA Gruppen
+I
+IAC
+IBM=ай&бі&ем
+ICA
+ICAP
 ICBC
 ICICI
 IDBI
 IDEX
-IDEXX Laboratories
+IDEXX
 IHI
-IHS Markit
-IKEA
+IHS
+IKEA=ік+еа
 ING
-INTL FCStone
+INTEL=інтел
+INTL
 IQVIA
 IT
 ITC
 Iberdrola
-Idemitsu Kosan
-Iida Holdings
+Idea
+Idemitsu
+Iida
+Ikeda
 Iliad
-Illinois Tool Works
+Illinois
 Illumina
-Imperial Brands
+Immobilien
+Imperial
 InBev
+Inbursa
 Inchcape
+Income
 Incyte
+India
 Indian
-Indian Oil
 Inditex
-Indorama Ventures
+Indonesia
+Indorama
 IndusInd
 Industrial
-Industrial Korea
-Industries Qatar
-Infineon Technologies
+Industries
+Industry
+Infineon
 Info
+Information
 Infosys
-Inmobiliaria Colonial
-Inner Mongolia Baotou Steel
-Inner Mongolia Yili
+Ingalls
+Inglés
+Inmobiliaria
+Inn
+Inner
 Innogy
+Innovation
 Inpex
-Inspur Electronic Information Industry
+Inspur
 Instagram
+Institute
+Instruments
 Insurance
-Insurance Australia
 Insurance=+інсуранс
-Intact Financial
-Intel
-Inter Rao
-Interactive Brokers
+Intact
+Integrated
+Intel=інт+ел
+Inter=+інтер
+InterActiveCorp
+Interactive=інтер+актів
+Intercontinental
 IntercontinentalExchange
-International
-International Airlines
-International Flavors & Fragrances
-International Paper
+International=інтерн+ешнл
 Interpublic
-Intesa Sanpaolo
+Intesa
 Intuit
-Intuitive Surgical
+Intuitive
 Inventec
 Invesco
 Investec
 Investment
-Investor AB
-Invitation Homes
+Investments
+Investor
+Invitation
+Ireland
 Iron
 Isbank
 Islamic
-Israel Discount
-Isuzu Motors
+Israel
+Isuzu
+Italia
+Italiane
 Itaú
-Itaú Unibanco Holding
 Itaúsa
 Itochu
 Iyo
-J Sainsbury
-J.B. Hunt Transport Services
-JB Financial
+J
+J.B.
+JB
 JBS
-JD.com
-JFE Holdings
-JG Summit Holdings
-JM Smucker
-JP Morgan
-JPMorgan Chase
+JD=джей&ді
+JFE
+JG
+JM=джей&ем
+JP=джей&пі
+JPMorgan=джей&пі&морган
 JR
-JSW Steel
+JSW
 JTEKT
-JXTG Holdings
-Jabil Circuit
-Jacobs Engineering
-Japan Airlines
-Japan Exchange
-Japan Post Holdings
-Japan Securities
-Japan Tobacco
-Jardine Matheson
-Jefferies Financial
-Jeronimo Martins
-JetBlue Airways
-Jiangsu Hengrui Medicine
-Jiangsu Yanghe Brewery
-Jiangsu Zhangjiagang Rural Commercial
-Jiangsu Zhongnan Construction
+JXTG
+Jabil
+Jacobs
+James
+James's
+Japan=джапан
+Jardine
+Jefferies
+Jeronimo
+JetBlue
+Jewellery
+Jiangsu
 Jiangxi
-Jiangxi Copper
-Jinke Property
-John Deere
-Johnson & Johnson
-Johnson Controls International
-Johnson Matthey
-Joint Stock Commercial for Foreign Trade Vietnam
-Jointown Pharmaceutical
-Jones Lang LaSalle
-Julius Baer
+Jiao
+Jinke
+Jinmao
+Jinzhou
+Jiujiang
+John
+Johnson
+Joint
+Jointown
+Jones
+Julius
+Junan
 Juroku
 Just
-Just Eat Takeaway.com
 Jyske
-KB Financial
+KB
 KBC
 KDDI
 KEPCO
 KFC
-KIA Motors
+KIA=к+іа
 KION
 KLA
-KLM
+KLM=ка&ель&ем
 KPMG
 KPN
 KT
 KT&G
-KWG Holdings
-Kaisa Holdings
+KWG
+Kai
+Kaisa
 Kajima
-Kansai Electric Power
-Kansas City Southern
+Kansai
+Kansas
 Kantonalbank
 Kao
+Kappa
 Kasei
 Kasikornbank
-Kawasaki Heavy Industries
+Kawasaki
 Keiyo
 Kellogg
 Kellogg's
 Keppel
 Kering
 Kerry
-Kerry Properties
 Kesko
-Keurig Dr Pepper
+Keurig
 KeyCorp
 Keyence
-Keysight Technologies
-Kimberly-Clark
-Kinder Morgan
+Keysight
+Kimberly
+Kinder
+King=кінг
 Kingfisher
 Kingsoft
-Kingspan PLC
-Kinross Gold
+Kingspan
+Kinross
 Kintetsu
+Kiraboshi
 Kirin
-Kirin Holdings
-Kirkland Lake Gold
+Kirkland
 Kiyo
 Klepierre
-Knorr-Bremse
-Kobe Steel
+Kline
+Kluwer
+Knorr
+Kobe
 Kohl's
-Koito Manufacturing
-Kojamo Oyj
+Koito
+Kojamo
 Komatsu
 Kone
-Korea Electric Power
-Korea Gas
-Korea Investment Holdings
-Korea Shipbuilding & Offshore Engineering
-Korean Air
-Kotak Mahindra
-Koç Holding
-Kraft Heinz Company
+Kong
+Kong=конг
+Korea
+Korean
+Kosan
+Kotak
+Koç
+Kraft
 Kroger
-Krung Thai
+Krung
 Kubota
-Kuehne & Nagel International
-Kuwait Finance House
-Kweichow Moutai
+Kuehne
+Kuwait
+Kweichow
+Kymmene
 Kyocera
-Kyushu Electric Power
-Kyushu Financial
-L Brands
+Kyoritsu
+Kyoto
+Kyushu
+L
 L&M
 L'Oréal
-L3Harris Technologies
-LARGAN Precision
-LEG Immobilien AG
+L3Harris
+LARGAN
+LEG
 LG
-LG Chem
-LG Display
-LG Electronics
-LG Household & Health Care
-LG Uplus
 LIC
 LKQ
 LT
-LVMH Moet Hennessy Louis Vuitton
+LVMH
+LaSalle
 LabCorp
 Laboratories
 LafargeHolcim
-Lam Research
-Lamb Weston Holdings
-Land Rover
-Larsen & Toubro
-Las Vegas Sands
-Latam Airlines
+Lake
+Lam
+Lamb
+Land
+Lang
+Language
+Lao
+Laojiao
+Larsen
+Las
+Latam
+Lauder
+Lauren
 Laval
 Lay's
 Lear
 Lease
 Leasing
-Legal & General
-Legend Holding
+Legal
+Legend
 Lego
 Legrand
 Leidos
@@ -1263,229 +1358,270 @@ Leisure
 Lendlease
 Lennar
 Lenovo
-Lens Technology
+Lens
 Leonardo
-Leroy Merlin
+Leong
+Leroy
+Less
 Leumi
 Lexus
 Liberbank
-Liberty Broadband
-Liberty Global
+Liberty
 Lidl
-Lincoln National
+Life
+Lifesciences
+Light
+Lilly
+Limited
+Lincoln
 Linde
-Lindt & Sprungli
-Link REIT
+Lindt
+Line
+Lines
+Link
 LinkedIn
 Liquide
-Live Nation Entertainment
+Liuhe
+Live
+Liverpool
 Lixil
 Lloyds
 Lloydsing
-Lockheed Martin
+Locker
+Lockheed
 Loews
-Logan Property Holdings
-London Stock Exchange
-Longfor Holdings
-Longfor Properties
-Longi Green Energy Technology
+Logan
+Logistics
+London
+Longfor
+Longi
+Longyuan
 Lonza
-Lotte Chemical
-Lotte Shopping
-Louis Vuitton
+Lotte
+Louis
 Lowe's
+Ltd.
+Lufthansa
+Luiza
 LukOil
 Lukoil
-Lululemon Athletica
+Lululemon
 Lundbergs
-Lundin Energy
-Luxshare Precision Industry
-Luzerner Kantonalbank
-Luzhou Lao Jiao
-Luzhou Laojiao
-LyondellBasell Industries
+Lundin
+Lung
+Luxottica
+Luxshare
+Luzerner
+Luzhou
+LyondellBasell
 M&G
 M&T
 M.A.C
 M3
 MCC
-MGM Resorts
-MOL Hungarian Oil
+MGM
+MOL
 MPS
-MS&AD Insurance
+MS&AD
 MSCI
 MTN
 MTR
-MTU Aero Engines AG
+MTU
 MUFG
+Mac
+Macalline
+Machinery
 Macquarie
 Macy's
-Magazine Luiza
-Magna International
+Mae
+Maersk=ма+ерск
+Magazine
+Magna
 Magnit
-Magnitogorsk Iron & Steel
+Magnitogorsk
 Mahindra
-Mahindra & Mahindra
+Mail
 Makita
+Mall
 Management
 Mandiri
 Manpower
+Manufacturing
 Manulife
 Mapfre
-Marathon Oil
-Marathon Petroleum
+Marathon
+Marietta
+Marine
 Markel
-Marketaxess Holdings
-Marks & Spencer
+Marketaxess
+Markit
+Marks
 Marlboro
 Marriott
-Marriott International
-Marsh & McLennan
+Marsh
 Marshalls
-Martin Marietta Materials
+Martin
+Martins
 Marubeni
-Marvell Technology
+Marvell=марвел
 Masco
 Mashreq
-Masraf Al Rayan
+Masraf
 Mastercard
 Match
 Materials
-Maxim Integrated Products
+Matheson
+Matthey
+Mauritz
+Maxim=макс+ім
+Maxx
 Maybank
-Mazda Motor
+Mazda=м+азда
 McCain
 McCormick
 McDonald's
 McKesson
 McKinsey
 McLane
-Mebuki Financial
+McLennan
+McMoRan
+Mebuki
 MediaTek
 Medical
-Medical Properties Trust
+Medicine
 Mediobanca
 Mediolanum
-Medipal Holdings
+Medipal
 Medtronic
-Mega Financial Holding
-Meiji Holdings
+Mega=м+ега
+Meiji
 Meituan
-Meituan Dianping
-Melrose Industries
+Mellon
+Melrose
 Mengniu
 MercadoLibre
 Mercadona
-Mercantil Servicios
-Mercedes-Benz
-Merck & Co
-Merck & Co.
-Mercuries & Associates
-Meritz Financial
-Meritz Securities
-Merlin Properties SOCIMI S.A
+Mercantil
+Mercedes=мерседес
+Merchants
+Merck
+Mercuries
+Meritz
+Merlin=мерлін
 Merrill
 MetLife
-Metallurgical Corp China
+Metal
+Metallurgical
+Metals
 Metlife
 Metro
-Metropolitan & Trust
-Mettler-Toledo International
+Metropolitan
+Mettler
+Mexican
+Mexico
 Michelin
-Micro
-Microchip Technology
-Micron Technology
-Microsoft
-Mid-america Apartment Communities
+Micro=мікро
+Microchip
+Micron=мікрон
+Microsoft=м+айкро&с+офт
+Mid-america
 Midea
-Midea Real Estate Holding
 Midland
-Migdal Insurance
+Migdal
+Mills
+Mindray
 Minebea
 Mines
-Mirae Asset Daewoo
+Mining
+Minsheng
+Mirae
+Mitsubish
 Mitsubishi
-Mitsubishi Chemical
-Mitsubishi Electric
-Mitsubishi Estate
-Mitsubishi Heavy Industries
-Mitsubishi Materials
-Mitsubishi Motors
-Mitsubishi UFJ Financial
-Mitsubishi UFJ Lease
 Mitsui
-Mitsui Chemicals
-Mitsui Fudosan
-Mitsui OSK Lines
-Mizrahi Tefahot
-Mizuho Financial
+Mittal
+Mizrahi
+Mizuho
 Mobil
+Mobile
+Mobis
 Moderna
-Mohawk Industries
-Molina Healthcare
-Molson Coors Brewing
-Momentum Metropolitan Holdings
-Mondelez International
+Moet
+Mohawk
+Molina
+Molson
+Molybdenum
+Momentum
+Mondelez
 Mondi
+Money
+Mongolia
 Monster
-Monster Beverage
-Montage Technology
+Montage
+Montreal
 Moody's
-Morgan Stanley
+Morgan
+Morris=морріс
+Morrison
 Mosaic
-Moscow Exchange
+Moscow
+Motor
 Motor=м+отор
-Motorola Solutions
+Motorola
+Motors
 Moutai
 Movistar
-Mowi ASA
-Munich RE
-Munich Re
-Murata Manufacturing
-Murphy Oil
-Murphy USA
+Mowi
+Munich
+Murata
+Murphy
 Musashino
 Muscat
-Muyuan Foodstuff
+Mutual
+Mutuel
+Muyuan
 MyMouse=май&маус
 Mylan
 Móvil
-Møller-Maersk
-NAB - National Australia
-NARI Technology Development
+Møller
+N.V.
+NAB
+NARI
 NASDAQ
 NBC
+NBD
 NCR
 NEC
 NEXON
-NH Investment & Securities
+NH
 NIVEA
 NN
-NRG Energy
+NRG
 NTPC
 NTT
 NVIDIA
 NVR
-NXP Semiconductors
+NXP
+Nagel
 Namco
-Nan Ya Plastics
+Nan
+Nanjing
 Nanto
+Nasional
 Naspers
 NatWest
-National
-National Commercial
-National Grid
-National Canada
-National Greece
-National Kuwait
-National=н+ашнл
+Nation
+National=н+ешнл
 Natixis
-Naturgy Energy
+Natl
+Natural
+Naturgy
 Naver
 Navient
 Nedbank
 Nederland
-Negara Indonesia
+Negara
+Nemours
+Nephew
 Nescafé
 Neste
 Nestle
@@ -1493,615 +1629,642 @@ Nestlé
 NetApp
 NetEase
 Netflix
+Network
 Networks
-New China Life Insurance
-New Hope Liuhe
-New Residential Investment
-New World Development
-New York Community Bancorp
-Newcrest Mining
-Newell Brands
+Nevada
+New
+New=нью
+Newcrest
+Newell
 Newfon=нью&фон
-Newmont Mining
-News Corp
-NewsOne=Ньюз&в+ан
+Newmont
+News=ньюз
+NewsOne=ньюз&в+ан
 Next
-NextEra Energy
+NextEra
 NiSource
+Nickel
 Nidec
 Nike
-Nine Dragons Paper Holdings
-Ningxia Baofeng Energy
+Nine
+Ningbo
+Ningxia
 Nintendo
 Nippon
-Nippon Express
-Nippon Life Insurance
-Nippon Paint
-Nippon Steel
-Nippon Steel Trading
-Nippon Telegraph & Tel
-Nippon Yusen
-Nishi-nippon Financial Holdings
+Nishi-nippon
 Nissan
-Nissan Motor
-Nitori Holdings
-Nitto Denko
+Nitori
+Nitto
 Nobel
 Nokia
 Nomura
-Nomura Research Institute
+Nonferrous
 Nordea
+Nordisk
 Nordstrom
-Norfolk Southern
-Norilsk Nickel
-Norsk Hydro
-North Pacific
-Northern Trust
-Northrop Grumman
+Norfolk
+Norilsk
+Norsk
+North
+Northern
+Northrop
 NortonLifeLock
-Norwegian Cruise Line Holdings
+Norwegian
+Nova
 Novartis
 Novatek
-Novo Nordisk
-Novolipetsk Steel
+Novo
+Novolipetsk
 Novozymes
+Nuclear
 Nucor
-Nuernberger Beteiligungs
+Nuernberger
 Nutrien
-Nvidia
-O'Reilly Automotive
+Nvidia=ен&відіа
+O'Reilly=о&рейлі
 O2
 OCBC
 OMRON
 OMV
-ONO Pharmaceutical
+ONO
+OSK
 OTP
 Obayashi
-Occidental Petroleum
+Occidental
 Of
-Chengdu
-Gansu
-Guiyang
-Hangzhou
-Jiangsu
-Shanghai
-Offcn Education Technology
+Offcn
 Office
-Ogaki Kyoritsu
-Oil & Natural Gas
-Oji Holdings
+Offshore
+Ogaki
+Oil
+Oji
 Okta
-Olam International
-Old Dominion Freight Line
-Old Mutual
+Olam
+Old
 Olympus
 Omnicom
-OneMain Holdings
+One
+OneMain
 Oneok
 Onex
-Ooredoo Q.P.S.C
+Ooredoo
+Optical
 Optum
-Oracle
-Orange
+Oracle=+оракл
+Orange=+оранж
 Orient
-Orient Securities
-Oriental Land
-Origin Energy
+Oriental
+Origin
 Orix
 Orkla
+Orlen
 Orsted
-Osaka Gas
+Osaka
 Oshkosh
-Otis Worldwide
+Otis=+отіс
 Otsuka
-Otsuka Holding
 Oversea-Chineseing
+Overseas
 Ovintiv
-PBF Energy
+Oyj
+PBF
 PG&E
-PGE Polska Grupa Energetyczna
+PGE
 PICC
-PKN Orlen
-PKO Polski
+PKN
+PKO
+PLC
 PNC
-PNC Financial Services
 POWERCHINA
 PPG
 PPL
+PSBC
 PTT
-PTT Global Chemical
 PVH
 PWC
+PZU
 Paccar
+Pacific
 Pacific=пац+ифік
-Packaging Corp America
+Packaging
+Packard=пакард
+Pactual
+Paint
 Paints
-Pall Mall
-Palo Alto Networks
+Pall
+Palmolive
+Palo=п+ало
 Pampers
-Pan Pacific International Holdings
+Pan=пан
+Panalpina
 Panasonic
 Pantene
+Papel
+Paper
+Parcel
 Paribas
 Paris=п+еріс
 Parker-Hannifin
-Parkland Fuel
-Partners Holding
+Parkland
+Participacoes
+Partners
 Parts
-PayPal
+PayPal=пей&пел
 Paychex
 Paycom
+Payments
 Pegatron
 Pekao
-Pembina Pipeline
+Pembina
 Pemex
-Penske Automotive
-People's United Financial
+Penske
+People's
+Pepper
 Pepsi
 PepsiCo
-Performance Food
-Pernod Ricard
+Performance
+Pernod
 Persimmon
 Peru
 PetroChina
 Petrobras
 Petrochemical
+Petroleum
 Petronas
-Petronas Chemicals
 Peugeot
+Pfandbrief
+Pfandbriefbank
 Pfizer
 Pgnig
+Pharma=фарма
+Pharmaceutical=фармас+ютікал
 Pharmaceuticals
-Philip Morris International
-Philips
-Phillips 66
-Phoenix Holdings
+Philip=ф+іліп
+Philips=ф+іліпс
+Phillips=ф+ілліпс
+Phoenix=ф+енікс
 Pinduoduo
-Ping An
-Ping An Insurance
-Pinnacle West
-Pioneer Natural Resources
+Ping=п+інг
+Pinnacle=п+інакл
+Pioneer
+Pipeline
 Piraeus
 Pirelli
-Pizza Hut
+Pizza
+Place
+Plastics
 Plastics=пл+астікс
 Playstation
-Poly Developments & Holdings
-Poly Property Co.
-Poly Real Estate
-Polymetal International
+Point
+Pokphand
+Polska
+Polski
+Poly
+Polymetal
 Polyus
 Popolare
 Populaire
 Popular
 Porsche
-Porsche Automobil Holding
+Port=порт
 Ports
+Portugal
+Portugues
 Posco
-Postal Savings
-Postal Savings China (PSBC)
-Poste Italiane
-Pou Chen
-Power Assets Holdings
-Power Construction Corporation China
-Power Corp Canada
-Power Finance
-Power Grid India
-Powerlong Real Estate
-President Chain Store
-Principal Financial
+Post
+Postal
+Poste
+Pou
+Power=п+авер
+Powerlong
+Precious
+Precision
+President
+Price=пр+айс
+Prime=пр+айм
+Principal
+Printing
 Processing
-Procter & Gamble
+Procter=проктер
 Products
 Progressive
 Prologis
 Properties
-Prosperity Bancshares
+Property
+Prosperity
 Prudential
-Prudential (UK)
-Prudential (US)
-Prudential Financial
 Prysmian
-Public
-Public Service Enterprise
-Public Storage
+Public=паблік
 Publicise
 Publix
+Pudong
+Puerto
 PulteGroup
-Punjab National
+Punjab
 Purina
-QBE Insurance
+Q.P.S.C
+QBE
 QNB
-Qantas Airways
-Qatar Islamic
-Qatar National
-Qingdao Rural Commercial
-Qualcomm
-Quanta Computer
-Quanta Services
-Quest Diagnostics
+QQ
+Qantas
+Qatar=кат+ар
+Qingdao
+Qualcomm=квалк+омм
+Quanta
+Quest
 Quilter
 Quinenco
-Qurate Retail
+Qurate
+R&F
 RBC
+RE
+REIT
 RELX
 RHB
 RHVoice=ер&аш&войс
-RSA Insurance
+RSA
 RTL
 RWE
 Rabobank
-Raiffeisen International
+Rad
+Raiffeisen
 Railway
-Rajesh Exports
+Rajesh
 Rajhi
 Rakuten
-Rakyat Indonesia (BRI)
-Ralph Lauren
-Ramsay Health Care
-Randstad N.V.
-Raymond James Financial
+Rakyat
+Ralph
+Ramsay
+Randstad
+Rao
+Rayan
+Raymond
 Raytheon
-Raytheon Technologies
+Re
 Real
-Realty Income
-Reckitt Benckiser
-Recruit Holdings
-Red Bull
-Red Eléctrica
-Red Star Macalline
-Regeneron Pharmaceuticals
-Regions Financial
-Reinsurance America
+Realty
+Reckitt
+Recruit
+Red=ред
+Red=ред
+Regeneron
+Regions
+Reinsurance
 Reliance
-Reliance Industries
-Reliance Steel
-RenaissanceRe Holdings
+RenaissanceRe
 Renault
-Renesas Electronics
+Renesas
+Rentals
 Repsol
 Republic
-Republic Services
 ResMed
-Resona Holdings
-Restaurant Brands International
+Research
+Residential
+Resona
+Resorts
+Resources
+Restaurant
+Restaurants
+Retail
+Retailing
+Reuters
 Rexel
+Ricard
 Richemont
 Ricoh
 RingCentral
-Rio Tinto
-RiseSun Real Estate Development
-Rite Aid
+Rio=ріо
+RiseSun
+Rite
 Riyad
+Robinson
 Roche
-Roche Holding
-Rockwell Automation
+Rockwell
+Rodamco
 Rogers
-Rogers Communications
 Roku
-Rolex
-Rolls-Royce Holdings
-Rongsheng Petrochemical
-Ronshine China Holdings
-Roper Technologies
+Rolex=р+олекс
+Rolls-Royce=ролс&ройз
+Rolls=ролс
+Rongsheng
+Ronshine
+Roper
 Rosneft
-Ross Dress For Less
-Ross Stores
+Ross
 Rosseti
-Royal Ahold Delhaize N.V.
-Royal Caribbean Cruises
-Royal Caribbean International
-Royal Dutch Shell
-Royal Mail
-Royal Scotland
-Ryanair Holdings
-S&P Global
+Rover=ровер
+Rowe
+Royal=роял
+Royce=ройз
+Rural
+Ryanair
+S&P
 S-Oil
-S.F. Holding
+S.A
+S.F.
+SA
 SABIC
-SAIC Motor
+SAIC
 SAP
-SBA Communications
-SBI Holdings
+SBA
+SBI
 SCA
-SDIC Capital
-SDIC Power Holdings
-SEB AB
-SEB SA
-SF Express
+SCE
+SDI
+SDIC
+SDS
+SEB
+SF
 SFR
-SG Holdings
+SG
 SGS
 SK
-SK Holdings
-SK Hynix
-SK Innovation
-SK Telecom
 SKF
 SLM
-SM Investments
+SM
 SMC
-SS&C Technologies
+SOCIMI
+SS&C
 SSE
-ST Engineering
+ST
 STC
 STMicroelectronics
 STRABAG
-SVB Financial
+SVB
 SYNNEX
 Sabadell
-Sabanci Holding
+Sabanci
+Sachs
 Safaricom
 Safran
-Saint-Gobain
+Sainsbury
+Saint
 Saipem
 Salesforce
-Salesforce.com
-Sam's Club
-Samba Financial
+Sam's
+Samba
 Sampo
 Samsung
-Samsung C&T
-Samsung Electronics
-Samsung Fire & Marine
-Samsung Life Insurance
-Samsung SDI
-Samsung SDS
-Samsung Securities
-San-In Godo
+San-In
+Sands
 Sandvik
+Sankyo
 Sanlam
 Sanofi
+Sanpaolo
 Santander
 Santos
-Sany Heavy Industry
+Sany
 Saputo
 Sartorius
 Sasol
 Saudi
-Saudi Arabian Mining
-Saudi Arabian Oil Company (Saudi Aramco)
-Saudi Aramco
-Saudi Basic Industries
-Saudi British
-Saudi Electricity
-Saudi Telecom
+Savings
 Sberbank
 Scentre
 Schaeffler
-Schindler Holding
+Schein
+Schindler
 Schlumberger
-Schneider Electric
+Schneider
 Schroders
+Schwab
+Sciences
 Scientific
 Scor
+Scotia
 Scotiabank
-Seagate Technology
-Sears Holdings
-Seattle Genetics
+Scotland
+Scripts
+Seagate
+Sears
+Seattle
 Seazen
 Secom
+Secret
 Securitas
+Securities
 Security
 Segro
-Sekisui Chemical
-Sekisui House
-Semiconductor Manufacturing International
-Sempra Energy
-Senshu Ikeda Holdings
+Seiki
+Sekisui
+Semiconductor
+Semiconductors
+Sempra
+Senshu
 Sephora
 Service
 ServiceNow
 Services
-Seven & I Holdings
+Servicios
+Seven
 Severstal
-Shaanxi Coal Industry
-Shandong Gold Mining
-Shanghai Commercial & Savings
-Shanghai Construction
-Shanghai Electric
-Shanghai Fosun Pharmaceutical
-Shanghai Ganglian E-Commerce Holdings
-Shanghai International Airport
-Shanghai International Port
-Shanghai Pharmaceuticals
-Shanghai Pudong Development
-Sharp
-Shaw Communications
-Shell
+Sha
+Shaanxi
+Shandong
+Shanghai
+Sharp=шарп
+Shaw
+Shekou
+Shell=шелл
 Shengjing
-Shenwan Hongyuan
+Shenhua
+Shenwan
 Shenzhen
-Shenzhen Goodix Technology
-Shenzhen Mindray Bio-Medical Electronics
-Shenzhen Overseas
-Shenzhou International Holdings
-Sherwin-Williams
+Shenzhou
+Sherwin
 Shiga
 Shimano
-Shimao Property Holdings
+Shimao
 Shimizu
-Shin Kong Financial
-Shin-Etsu Chemical
-Shinhan Financial
+Shin
+Shin-Etsu
+Shinhan
 Shinsei
 Shionogi
+Shipbuilding
+Shipping
 Shiseido
 Shizuoka
 Shopify
+Shopping
 Shougang
-Showa Denko
-Siam Cement
-Siam Commercial
-Sichuan Language Development
+Shoulders
+Showa
+Siam
+Sichuan
 Siemens
 Signature
 Sika
-Simon Property
+Simon
 SingTel
-Singapore Airlines
-Sino Biopharmaceutical
-Sino-Ocean Holding
-SinoPac Financial
+Singapore
+Sino
+Sino-Ocean
+SinoPac
 Sinopec
 Sinopharm
-Sinotruk Hong Kong
+Sinotruk
 SiriusXM
 Sistema
+Site
 Skanska
 Sky
-Skyworks Solutions
-Slack Technologies
-Smith & Nephew
-Smurfit Kappa
+Skyworks
+Slack
+Smart
+Smith
+Smucker
+Smurfit
 Snam
 Snap
 Snap-on
-Société Générale
+Société=соцієте
 Sodexo
 Sofina
 SoftBank
 Softbank
 Software
 Sojitz
+Solutions
 Solvay
 Sompo
-Sompo Japan Nipponkoa
+SompoJapanNipponkoa
 Sondrio
-Sonova Holding
+SonovaHolding
 Sony
-Southern Company
-Southwest Airlines
-Space Storage
+Soup
+Southern
+SouthernCompany
+SouthwestAirlines
+SpaceStorage
 Special
 Spectrum
-Spirit AeroSystems
+Speed
+Spencer
+Spirit
 Splunk
 Sports
-Spotify Technology
+Spotify
 Sprint
 Sprite
+Sprungli
 Square
-St. James's Place
+Squibb
 Standard
-Standard Chartered
-Stanley Black & Decker
-Starbucks
-Starwood Property Trust
-State Grid
-State Street
-State India
+Stanley
+Star=стар
+Starbucks=ст+арбакс
+Starwood=ст+арвуд
+State
 Steel
-Steel Authority India
-Steel Dynamics
-Steinhoff International
+Steinhoff
 Steris
-Stifel Financial
-Stora Enso
+Stifel
+Stock
+Stora
+Storage
+Store
 Storebrand
+Stores
+Street
 Stryker
 Studios
 Subaru
 Subway
+Suisse
 Sumitomo
-Sumitomo Chemical
-Sumitomo Electric
-Sumitomo Metal Mining
-Sumitomo Mitsui Financial
-Sumitomo Mitsui Trust
-Sumitomo Realty
-Sun Art Retail
-Sun Hung Kai Properties
-Sun Life Financial
-Sun Pharma Industries
+Summit
+Sun=сан
 Sunac
-Sunac China Holdings
-Suncor Energy
+Suncor
 Suncorp
 Suning
 Suning.com
-Sunny Optical Technology
-Suntory Beverage & Food
+Sunny
+Suntory
+Supermarkets
 Supermarts
+Superstores
+Supply
+Surgical
 Surgutneftegas
-Suzano Papel e Celulose
+Suzano
+Suzhou
 Suzuken
 Suzuki
-Suzuki Motor
-Svenska Handelsbanken
+Svenska
 Swatch
 Swedbank
-Swedish Match
-Swire Pacific
-Swiss Life Holding
-Swiss Prime Site
-Swiss Re
+Swedish
+Swire
+Swiss
 Swisscom
-Synchrony Financial
+Synchrony
 Synopsys
-Synovus Financial
+Synovus
 Sysco
 Sysmex
-T Rowe Price
-T&D Holdings
-T.J. Maxx
-TATA
-TC Energy
-TCF Financial
+Systemes
+Systems
+T&D
+T.J.
+TATA=т+ата
+TC
+TCF
 TCL
 TD
-TD Ameritrade Holding
 TDK
-TE Connectivity
+TE
 TELUS
 TIM
-TJX Cos
+TJX
 TMB
-TP ICAP
+TP
 TSMC
 TUI
-Taco Bell
+Taco
 Tahoe
+Tai
+Taiping
 Taisei
-Taishin Financial Holdings
-Taiwan Business
-Taiwan Cement
-Taiwan Cooperative Financial
-Taiwan Semiconductor
-Take-Two Interactive Software
-Takeda Pharmaceutical
+Taishin
+Taiwan
+Take-Two
+Takeaway
+Takeda
 Talanx
 Taobao
-Targa Resources
+Tard
+Targa
 Target
-Tata Consultancy Services
-Tata Motors
-Tata Steel
+Tata
 Tatneft
-Taylor Wimpey
-Tech Data
-Tech Mahindra
+Taylor
+Tech
 Technipfmc
 Technologies
 Technology
-Techtronic Industries
-Teck Resources
-Telecom Italia
-Teledyne Technologies
+Techtronic
+Teck
+Tefahot
+Tel
+Telecom
+Teledyne
 Teleflex
 Telefónica
+Telegraph
+Telekom
 Telenor
 Teleperformance
 Telia
-Telia Company
-Telkom Indonesia
+Telkom
 Telstra
 Telus
-Tenaga Nasional
+Tenaga
 Tenaris
-Tencent (QQ)
-Tencent Holdings
-Tenet Healthcare
+Tencent
+Tenet
 Tenneco
 Teradyne
 Terna
@@ -2109,108 +2272,112 @@ Ternium
 Terumo
 Tesco
 Tesla
-Teva Pharmaceutical
-Texas Instruments
+Teva
+Texas
 Textron
-Thai Beverage
+Thai
 Thailand=т+аіланд
 Thales
-The Estée Lauder Companies
-Thermo Fisher Scientific
-Thomson Reuters
+The
+Thermo
+Third
+Thomson
 ThyssenKrupp
-Tiffany & Co.
-Tim Hortons
-Times Property Holdings
-Tingyi Holding
+Tianjin
+Tiffany
+Tim
+Times
+Tingyi
+Tinto
+Tire
 Tmall
+Tobacco
 Tobacco=тоб+акко
 Toho
-Tohoku Electric Power
-Tokio Marine
-Tokio Marine Holdings
-Tokyo Century
-Tokyo Electric Power
-Tokyo Electron
-Tokyo Gas
-Tokyo Kiraboshi Financial
+Tohoku
+Tokyo
 Tokyu
-Tokyu Fudosan
-Toll Brothers
-Tongling Nonferrous Metals
-Top Frontier Investment Holdings
-Toppan Printing
-Toray Industries
+Toledo
+Toll
+Tongling
+Tool
+Top
+Toppan
+Toray
 Toshiba
 Tosoh
 Total
+Toubro
 Tower
+Towers
 Towngas
 Toyota
-Toyota Industries
-Toyota Motor
-Toyota Tsusho
-Tractor Supply
-Trane Technologies
+Tractor
+Trade
+Trading
+Trane
 TransDigm
 TransUnion
 Transneft
+Transport
 Transurban
+Travel
 Travelers
+Tree
 Trimble
 Trip.com
 Truist
-Truist Financial
-Tsim Sha Tsui Properties
-Turkish Airlines
+Trust
+Tsim
+Tsui
+Tsushin
+Tsusho
+Turkish
 Twilio
 Twitter
 Tyson
-Tyson Foods
-U.S.
-UBI Banca
+U.S.=ю&ес
+UA=ю&ей
+UBI
 UBS
 UCB
+UFJ
 UGI
+UK=ю&кей
 UNIQLO
 UOB
-UPM-Kymmene
+UPM
 UPS
-US Bancorp
-US Foods
-US Steel
-USA
+US
+USA=ю&ес&ей
 Uber
-Ulta Beauty
-Ultrapar Participacoes
+Ulta
+Ultrapar
 Umicore
-Uni-President
+Uni
 UniCredit
-Unibail-Rodamco
-Unicaja Banco
+Unibail
+Unibanco
+Unibank
+Unicaja
 Unicharm
+Unicom
 Unilever
-Union Pacific
-Union India
-Unipol Gruppo
+Union
+Unipol
 Uniqa
 Unisplendour
 United
-United Airlines
-United Airlines Holdings
-United Natural Foods,
-United Overseas
-United Parcel Service
-United Rentals
-United Utilities
 UnitedHealth
 UnitedHealthcare
 Universal
-Universal Health
+Uno
 Unum
+Uplus
+Utilities
 VEON
 VF
-VICI Properties
+VICI
 VINCI
 VISA
 VMWARE
@@ -2220,204 +2387,205 @@ VakifBank
 Vale
 Valeo
 Valero
-Valero Energy
-Valley Natl Bancorp
+Valin
+Valley
 Vanke
 Vaudoise
-Vedanta Limited
-Veeva Systems
+Vedanta
+Veeva
+Vegas
 Ventas
-Veolia Environnement
+Venture
+Ventures
+Veolia
 Verbund
 VeriSign
-Verisk Analytics
+Verisk
+Veritas
 Verizon
-Verizon Communications
-Vertex Pharmaceuticals
-Vestas Wind Systems
+Vertex
+Vestas
 ViacomCBS
 Victoria
-Victoria's Secret
-Vienna Insurance
+Victoria's
+Video
+Vienna
 Vietin
+Vietnam
 Viettel
 Vingroup
-Vipshop Holdings
-Virgin Money UK
+Vipshop
+Virgin
 Visa
-Vistra Energy
+Vistra
 Vivendi
+Vizcaya
 Vodafone
-Vodafone Idea
 Voestalpine
 Volkswagen
-Volvo
+Volvo=в+ольво
 Vonovia
 Vopak
-Vornado Realty
-Voya Financial
-Vulcan Materials
-W.P. Carey
-WEC Energy
+Vornado
+Voya
+Vuitton
+Vulcan
+W.P.
+WEC
 WEG
 WH
-WPG Holdings
+WPG
 WPP
-WR Berkley
-WW Grainger
+WR
+WW
 Walgreens
-Walgreens Boots Alliance
+Wall
 Walmart
-Walt Disney
-Wanhua Chemical
-Want Want China
-Warner Bros
-Waste Connections
-Waste Management
+Walt
+Wanda
+Wanhua
+Want
+Warner
+Waste
 Water
 Waters
+Watson=ватсон
 Wayfair
-WeChat
-Weatherford International
-Weichai Power
-Wells Fargo
+WeChat=ві&ч+ат
+Weatherford
+Weichai
+Wells
 Welltower
 Wendel
-Wens Foodstuff
+Wens
 Wesfarmers
-West Japan Railway
+West
 WestRock
-Western Alliance Bancorp.
-Western Digital
-Western Union
-Westinghouse Air Brake Technologies
-Westlake Chemical
-Westpac 
+Western
+Westinghouse
+Westlake
+Weston
+Westpac
 Weyerhaeuser
-Wheaton Precious Metals
+Wheaton
 Wheelock
 Whirlpool
-Whole Foods
+Whole
 Wholesale
-Will Semiconductor
+Will
 Williams
-Willis Towers Watson
-Wilmar International
-Wingtech Technology
-Wintrust Financial
+Willis
+Wilmar
+Wimpey
+Wind
+Wingtech
+Wintrust
 Wipro
 Wirecard
 Wistron
-Wm Morrison Supermarkets
-Wolters Kluwer
-Woodside Petroleum
+Wm
+Wohnen
+Wolters
+Woodside
 Woolworths
-Woori Financial
+Woori
 Workday
 Works
-World Fuel Services
+World
+Worldwide
 Wrigley
-Wuchan Zhongda
-Wuestenrot & Wuerttembergische
+Wuchan
+Wuerttembergische
+Wuestenrot
 Wuliangye
-Wuliangye Yibin
-Wuxi Apptec
-Wuxi Biologics
-Wynn Resorts
-X5 Retail
-XCMG Construction Machinery
-XPO Logistics
-Xbox
-Xcel Energy
-Xerox
+Wuxi
+Wynn
+X5
+XCMG
+XPO
+Xbox=+ікс&бокс
+Xcel
+Xerox=кс+ерокс
 Xfinity
-Xiamen C&D
-Xiamen International Trade
-Xiamen Xiangyu
-Xiaomi
+Xi'an
+Xiamen
+Xiangyu
+Xiaomi=кся+омі
 Xilinx
-Xinyu Iron & Steel
+Xinyu
 Xylem
 YPF
+Ya
 Yahoo!
-Yamada Denki
-Yamaguchi Financial
-Yamaha Motor
-Yamato Holdings
+Yamada
+Yamaguchi
+Yamaha
+Yamato
 Yanghe
 Yango
-Yanzhou Coal Mining
-Yara International
-Yes
+Yangtze
+Yanzhou
+Yara
+Yes=йес
+Yibin
 Yili
-Yonghui Superstores
-Yonyou Network Technology
-YouTube
+Yonghui
+Yonyou
+York
+York=йорк
+YouTube=ютуб
 Youku
-Yuanta Financial Holding
-Yuexiu Property
-Yum China Holdings
-Yum! Brands
-Yunnan Baiyao
-Yuzhou Properties
+Yuanta
+Yuexiu
+Yum
+Yum!
+Yunnan
+Yusen
+Yuzhou
 ZARA=з+ара
 ZTE=зе&те&є
 Zain
 Zalando
-Zebra Technologies
+Zebra
 Zenith
-Zhejiang Zheneng Electric Power
+Zhangjiagang
+Zhejiang
+Zheneng
+Zhengzhou
+Zheshang
+Zhifei
+Zhongda
 Zhongliang
+Zhongnan
 Zhongsheng
 Zhongyuan
-Zijin Mining
-Zimmer Biomet
-Zions Bancorp
+Zijin
+Zimmer
+Zions
 Zoetis
 Zone
-Zoom Video Communications
-Zoomlion Heavy Industry
+Zoom=зум
+Zoomlion
 Zurich=ц+юріх
 accenture
+and
 android=андр+оїд
 au
+bank=банк
 booking.com=букінг&ком
+com=ком
 ctrip.com
-de
 de=де
 di
+e
 eBay=е&бей
-iA Financial Corporation
+for=фор
+iA
 iHeartMedia
 iOS=ай&ос
 ios=ай&ос
+l'Odet=лод+ет
 linux=л+інукс
 nab
-of
-America
-Baroda
-Beijing
-Changsha
-China
-Chongqing
-Communications
-East Asia
-Greece
-Guizhou
-India
-Ireland
-Jinzhou
-Jiujiang
-Kyoto
-Montreal
-Nanjing
-New York Mellon
-Ningbo
-Nova Scotia
-Qingdao
-Suzhou
-Tianjin
-Xi'an
-Zhengzhou
 of=оф
 windows=в+індовс
