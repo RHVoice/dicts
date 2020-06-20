@@ -2348,10 +2348,10 @@ UNIQLO
 UOB
 UPM
 UPS
-US
+US=ю&ес
 USA=ю&ес&ей
-Uber
-Ulta
+Uber=+убер
+Ulta=+ультра
 Ultrapar
 Umicore
 Uni
@@ -2371,7 +2371,7 @@ United
 UnitedHealth
 UnitedHealthcare
 Universal
-Uno
+Uno=+уно
 Unum
 Uplus
 Utilities
@@ -2408,7 +2408,7 @@ Vestas
 ViacomCBS
 Victoria
 Victoria's
-Video
+Video=в+ідео
 Vienna
 Vietin
 Vietnam
@@ -2416,13 +2416,13 @@ Viettel
 Vingroup
 Vipshop
 Virgin
-Visa
+Visa=в+іза
 Vistra
 Vivendi
 Vizcaya
 Vodafone
 Voestalpine
-Volkswagen
+Volkswagen=фольцв+аген
 Volvo=в+ольво
 Vonovia
 Vopak
