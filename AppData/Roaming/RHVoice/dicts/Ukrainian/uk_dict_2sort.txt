@@ -1,0 +1,11 @@
+﻿; 01 ; This dictionary for Ukrainian voices which are part of RHVoice Speech Synthesizer (https://github.com/Olga-Yakovleva/RHVoice) OR (https://github.com/RHVoice) contains the rules for the correct pronunciation of Ukrainian words and abbreviations.
+; 02 ; This dictionary is distributed under LGPL v2.1 or later.
+; 03 ; Copyright (C) 2020 DictionaryTeam (https://github.com/RHVoice)
+; 04 ; DictionaryTeam:
+; 05 ; ANT Berezhnyi <velmyshanovnyi@gmail.com> | www.t.me/velmyshanovnyi
+; 
+Boa=бо&а
+constriktor=констр+іктор
+Іван Франк+о
+Франк+о Іван
+
