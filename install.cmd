@@ -6,17 +6,17 @@ setlocal EnableDelayedExpansion
 @echo #
 @echo # Це iнсталятор скрипта для оновлення словникiв 
 @echo # RHVoice Speech Synthesizer
-@echo # https://github.com/Olga-Yakovleva/RHVoice
-@echo # джерело iнсталятора: https://github.com/RHVoice
+@echo # https://github.com/RHVoice
+@echo # джерело iнсталятора: https://github.com/RHVoice/RHVoice
 @echo #
 @echo # This updater is distributed under LGPL v2.1 or later.
-@echo # Copyright (C) 2020 DictionaryTeam (https://github.com/RHVoice)
+@echo # Copyright (C) 2020-2021 DictionaryTeam (https://github.com/RHVoice/dicts)
 @echo # DictionaryTeam:
 @echo # ANT Berezhnyi # velmyshanovnyi@gmail.com # www.t.me/velmyshanovnyi #
 @echo #
 @echo # ----- WINDOWS -----
 @echo # 1) У вас має бути вже заiнстальований релiз RHVoice. Брати тут:
-@echo # https://github.com/Olga-Yakovleva/RHVoice/releases
+@echo # https://github.com/RHVoice/RHVoice/releases
 @echo #
 @echo # 2) щоб повторно оновлювати словники запускай
 @echo # "update_dict.cmd"
@@ -60,7 +60,7 @@ rmdir /s/q %FolderTEMP%
 @echo # ## (якщо не оновилось не все, запусти повторно)     ##
 @echo # ##                                                  ##
 @echo # ## ------------------------------------------------ ##
-@echo # ## версiя скрипта вiд : 20200601-0001               ##
+@echo # ## версiя скрипта вiд : 20210118-0002               ##
 @echo # ## версiя словникiв   : по датi оновлення на GitHub ##
 @echo # ## https://github.com/RHVoice/dicts                 ##
 @echo # ## ------------------------------------------------ ##
