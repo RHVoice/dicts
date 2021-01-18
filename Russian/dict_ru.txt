@@ -1,0 +1,7 @@
+; 01 ; This dictionary for Russian voices which are part of RHVoice Speech Synthesizer (https://github.com/RHVoice) contains the rules for the correct pronunciation of Russian words and abbreviations.
+; 02 ; This dictionary is distributed under LGPL v2.1 or later.
+; 03 ; Copyright (C) 2020-2021 DictionaryTeam (https://github.com/RHVoice/dicts)
+; 04 ; DictionaryTeam:
+; 05 ; ANT Berezhnyi <velmyshanovnyi@gmail.com> | www.t.me/velmyshanovnyi
+
+RHVoice=RH&Voice
